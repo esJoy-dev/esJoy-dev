@@ -4,7 +4,7 @@
 
 ## 👋 Hello, I'm esJoy
 
-I design and build interconnected digital systems that bring Automation, AI, Infrastructure and Software Engineering together. I enjoy understanding and turning independent tools into practical maintainable ecosystem environments.
+I design and build interconnected digital systems that bring Full Stack development, Automation, AI, Infrastructure and Software Engineering together. I enjoy understanding how independent technologies work and turning them into practical, maintainable digital ecosystems.
 I build with curiosity, clear documentation, human oversight, and long term ownership in mind.
 
 ## 🧩 What I Work On
@@ -14,6 +14,7 @@ I build with curiosity, clear documentation, human oversight, and long term owne
 | **Automation Systems** | Connecting workflows and reducing repetitive operations. |
 | **AI Integration & Agents** | Model orchestration, tool integrations, and practical AI workflows. |
 | **Infrastructure & Self-Hosting** | Local environments, containers, cloud services, and connected systems. |
+| **Full-Stack Development** | Building applications across frontend, backend, APIs, and databases. |
 | **Systems Architecture** | Making services, data, and processes work as a coherent ecosystem. |
 | **Experiments & Tools** | Exploring new technologies and building useful prototypes. |
 
@@ -41,13 +42,14 @@ I build with curiosity, clear documentation, human oversight, and long term owne
 [Dome](https://neodome.app) is a framework I'm developing around interconnected, autonomous digital ecosystems.
 The dome represents an environment where infrastructure, intelligent agents, workflows, and security work together. The Tree represents growth and adaptation; its roots connect the ecosystem's components while keeping the system understandable and under human control.
 Dome app is one expression of my engineering philosophy, not the limit of what I design.
+- [Visit Dome app](https://neodome.app)
 
 ## 🤝 Let's Connect
 
 I'm interested in thoughtful collaborations, technical projects, open source work, and conversations about building better systems.
 
-- [Explore my GitHub](https://github.com/esJoy-dev)
-- [Visit Dome app](https://neodome.app)
+- 📧 **Email:** [Get in touch](mailto:carlosmz@neodome.app)
+
 
 <!-- Add a verified email or professional social link here when ready. -->
 
