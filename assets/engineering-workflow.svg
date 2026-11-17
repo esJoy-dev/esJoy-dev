@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1500" height="700" viewBox="0 0 1500 700" role="img" aria-labelledby="title desc">
 <title id="title">My Engineering Loop</title>
-<desc id="desc">A guided animation cycle: humans set direction in Explore and Architect; a packet travels into the agent delivery loop through Implement and Verify; it reaches the human approval gate, which first declines (amber) and sends the packet back through the rework path; on the second, faster pass the gate approves (green); the packet reaches Release, which is marked approved, and a final streak rides the operate-and-learn arc back to direction, looping forever. Security runs across every phase. If reduced-motion is preferred, the diagram shows its complete static state.</desc>
+<desc id="desc">A guided animation cycle: humans set direction in Explore and Architect; a packet travels into the agent delivery loop through Implement and Verify; it reaches the human approval gate, which first declines (amber) and sends the packet back through the rework path; on the second, faster pass the gate approves (green) and Release powers on from steel standby to full mint; the packet reaches Release, the approval seal stamps, and a final streak rides the operate-and-learn arc back to direction, looping forever. Security runs across every phase. If reduced-motion is preferred, the diagram shows its complete static state.</desc>
 <defs>
  <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#071525"/><stop offset=".55" stop-color="#10233b"/><stop offset="1" stop-color="#141a34"/></linearGradient>
  <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#3a6683" stroke-opacity=".16" stroke-width="1"/></pattern>
@@ -14,6 +14,9 @@
   .cm{fill:none;stroke-linecap:round;animation-timing-function:linear}
   .kBox{animation-name:kBox}.kImpl{animation-name:kImpl}.kVer{animation-name:kVer}.kRel{animation-name:kRel}
   .kGA{animation-name:kGA}.kGAh{animation-name:kGAh}.kGG{animation-name:kGG}.kGGh{animation-name:kGGh}.kRelH{animation-name:kRelH}.kCont{animation-name:kCont}
+  .kRelS{animation-name:kRelS}.kRocketP{animation-name:kRocketP}
+  @keyframes kRelS{0%,75.5%{opacity:0}79%{opacity:1}97%{opacity:1}100%{opacity:0}}
+  @keyframes kRocketP{0%,75.5%{opacity:1}79%{opacity:0}97%{opacity:0}100%{opacity:1}}
   .kA{animation-name:kA}.kB{animation-name:kB}.kC{animation-name:kC}.kRW{animation-name:kRW}.kD{animation-name:kD}.kL{animation-name:kL}
   @keyframes kBox{0%{opacity:0}1.5%{opacity:.85}6%{opacity:.85}7.5%,100%{opacity:0}}
   @keyframes kImpl{0%,11.9%{opacity:0}13%{opacity:.85}20%{opacity:.85}21.3%{opacity:0}60.6%{opacity:0}61.2%{opacity:.75}65.6%{opacity:.75}66.3%,100%{opacity:0}}
@@ -31,9 +34,11 @@
   @keyframes kRW{0%,48.8%{opacity:0;stroke-dashoffset:26}49.6%{opacity:1}58%{opacity:1}58.8%,100%{opacity:0;stroke-dashoffset:-494}}
   @keyframes kD{0%,83.8%{opacity:0;stroke-dashoffset:20}84.4%{opacity:1}86.9%{opacity:1}87.5%,100%{opacity:0;stroke-dashoffset:-70}}
   @keyframes kL{0%,93.8%{opacity:0;stroke-dashoffset:34}94.2%{opacity:1}99.6%{opacity:1}100%{opacity:0;stroke-dashoffset:-1508}}
+  @keyframes flowF{to{stroke-dashoffset:-34}}
+  .flowF{animation:flowF 2.6s linear infinite}
   .breathe{animation:breathe 4s ease-in-out infinite}
   @keyframes breathe{0%,100%{opacity:.55}50%{opacity:1}}
-  @media (prefers-reduced-motion:reduce){.fx,.breathe{animation:none}}
+  @media (prefers-reduced-motion:reduce){.fx,.breathe,.flowF{animation:none}}
  </style>
 </defs>
 <rect x="5" y="5" width="1490" height="690" rx="28" fill="url(#bg)" stroke="#32617f" stroke-width="2"/>
@@ -59,7 +64,7 @@
 <text x="765" y="250" fill="#d7e5f2" font-family="Arial, Helvetica, sans-serif" font-size="15">and review outputs —</text>
 <text x="765" y="272" fill="#d7e5f2" font-family="Arial, Helvetica, sans-serif" font-size="15">find what breaks.</text>
 <path d="M690 208H743" fill="none" stroke="#4de8f5" stroke-width="2.5" marker-end="url(#cyanArrow)"/>
-<path d="M745 285H692" fill="none" stroke="#b08cff" stroke-width="2.5" stroke-dasharray="9 8" marker-end="url(#violetArrow)"/>
+<path d="M745 285H692" fill="none" stroke="#b08cff" stroke-width="2.5" stroke-dasharray="9 8" class="flowF" marker-end="url(#violetArrow)"/>
 <text x="717" y="305" text-anchor="middle" fill="#cdbdff" font-family="Arial, Helvetica, sans-serif" font-size="11">findings</text>
 <rect x="55" y="130" width="330" height="200" rx="20" fill="url(#mintglass)" stroke="#56e7af" stroke-width="1.8"/>
 <path d="M73 132h140" stroke="#d9f9ff" stroke-opacity=".4" stroke-width="2"/>
@@ -78,10 +83,12 @@
 <text x="1105" y="254" text-anchor="middle" fill="#b8ffe1" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" letter-spacing="1">APPROVAL</text>
 <g class="fx kGAh"><circle cx="1105" cy="150" r="12.5" fill="#6e3f11" stroke="#ffb454" stroke-width="2.5"/><path d="M1099.5 144.5l11 11 M1110.5 144.5l-11 11" fill="none" stroke="#ffdcae" stroke-width="2.8" stroke-linecap="round"/></g>
 <g class="fx kGGh"><circle cx="1105" cy="150" r="12.5" fill="#0f4d35" stroke="#56e7af" stroke-width="2.5"/><path d="M1098.5 150l4.5 5 8.5 -9.5" fill="none" stroke="#b8ffe1" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></g>
-<rect x="1250" y="130" width="195" height="200" rx="20" fill="url(#mintglass)" stroke="#56e7af" stroke-width="1.8"/>
+<rect x="1250" y="130" width="195" height="200" rx="20" fill="#17293f" stroke="#7491ac" stroke-width="1.8"/>
+<rect x="1250" y="130" width="195" height="200" rx="20" fill="url(#mintglass)" stroke="#56e7af" stroke-width="1.8" class="fx kRelS"/>
 <path d="M1268 132h120" stroke="#d9f9ff" stroke-opacity=".4" stroke-width="2"/>
 <rect x="1268" y="150" width="100" height="26" rx="13" fill="#0f493f" stroke="#56e7af" stroke-width="1.4"/><text x="1318" y="167" text-anchor="middle" fill="#b8ffe1" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="bold" letter-spacing="1">HUMAN-LED</text>
-<g fill="none" stroke="#75efbd" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1398 160c-8 8 -11 19 -11 27v10h22v-10c0 -8 -3 -19 -11 -27z"/><circle cx="1398" cy="182" r="5"/><path d="M1387 185l-9 11h9 M1409 185l9 11h-9"/><path d="M1395 197c1 3 2 6 3 8 1 -2 2 -5 3 -8"/></g>
+<g class="kRocketP" fill="none" stroke="#7d96ae" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1398 160c-8 8 -11 19 -11 27v10h22v-10c0 -8 -3 -19 -11 -27z"/><circle cx="1398" cy="182" r="5"/><path d="M1387 185l-9 11h9 M1409 185l9 11h-9"/><path d="M1395 197c1 3 2 6 3 8 1 -2 2 -5 3 -8"/></g>
+<g class="fx kRelS" fill="none" stroke="#75efbd" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1398 160c-8 8 -11 19 -11 27v10h22v-10c0 -8 -3 -19 -11 -27z"/><circle cx="1398" cy="182" r="5"/><path d="M1387 185l-9 11h9 M1409 185l9 11h-9"/><path d="M1395 197c1 3 2 6 3 8 1 -2 2 -5 3 -8"/></g>
 <text x="1268" y="234" fill="#f5f9ff" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold">RELEASE</text>
 <text x="1268" y="264" fill="#d7e5f2" font-family="Arial, Helvetica, sans-serif" font-size="15">Ship deliberately:</text>
 <text x="1268" y="286" fill="#d7e5f2" font-family="Arial, Helvetica, sans-serif" font-size="15">a human decides</text>
