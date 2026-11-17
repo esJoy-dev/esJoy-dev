@@ -14,8 +14,6 @@
 <rect x="8" y="8" width="1484" height="824" rx="26" fill="url(#grid)"/>
 <path d="M48 46h65" stroke="#45e5f5" stroke-width="5"/><path d="M128 46h90" stroke="#49748f" stroke-width="2"/>
 <text x="68" y="105" fill="#f1f7ff" font-family="Arial, Helvetica, sans-serif" font-size="43" font-weight="700">How I Engineer Systems</text>
-<text x="70" y="140" fill="#b5c7d8" font-family="Arial, Helvetica, sans-serif" font-size="19">Explore deeply. Build deliberately. Verify independently. Release with human oversight.</text>
-<text x="1430" y="50" text-anchor="end" fill="#9fb5d6" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="2">BLUEPRINT / 02</text>
 
 <path d="M463 304L518 304" fill="none" stroke="#4de8f5" stroke-width="3" marker-end="url(#cyanArrow)"/>
 <path d="M973 304L1028 304" fill="none" stroke="#4de8f5" stroke-width="3" marker-end="url(#cyanArrow)"/>
