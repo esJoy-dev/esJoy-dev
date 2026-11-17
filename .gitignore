@@ -1,0 +1,9 @@
+# Local agent tooling (Gentle Shell skill registry)
+.atl/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+
+# Local working notes, not published
+SETUP.md
