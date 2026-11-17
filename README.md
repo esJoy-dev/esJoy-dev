@@ -4,7 +4,7 @@
 
 # 👋 Hello, I'm esJoy
 
-> I design and build agent-driven systems that keep humans in charge.
+> I design and build agent driven systems that keep humans in charge.
 
 I bring Full Stack development, Automation, AI, Infrastructure, and Software Engineering together into interconnected digital ecosystems. I enjoy understanding how independent technologies work and turning them into practical, maintainable systems built with curiosity, clear documentation, and long term ownership in mind.
 
