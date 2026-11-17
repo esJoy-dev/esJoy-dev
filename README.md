@@ -26,10 +26,8 @@ I build with curiosity, clear documentation, human oversight, and long term owne
 - **Stay adaptable.** Avoid unnecessary dependence on one model, platform, or provider.
 - **Keep exploring.** Experimentation is part of the engineering process.
 
-##
-
 <div align="center">
-  <img src="assets/engineering-workflow.svg" alt="Engineering workflow: Explore, Architect, Implement, Verify, Secure, and Release with human approval. Verification findings may send work back for iteration." width="100%" />
+  <img src="assets/engineering-workflow.svg" alt="My engineering loop: humans set direction in Explore and Architect; agents run a delivery loop of Implement and Verify until clean; security runs across every phase; a human approval gate stands before Release; declined work reworks into the loop and released systems feed an operate-and-learn arc back into direction. Animations are decorative and respect reduced-motion settings." width="100%" />
 </div>
 
 ## 🛠️ My Technology Ecosystem
