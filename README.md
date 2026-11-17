@@ -6,7 +6,7 @@
 
 > I design and build agent-driven systems that keep humans in charge.
 
-I bring Full Stack development, Automation, AI, Infrastructure, and Software Engineering together into interconnected digital ecosystems. I enjoy understanding how independent technologies work and turning them into practical, maintainable systems — built with curiosity, clear documentation, and long-term ownership in mind.
+I bring Full-Stack development, Automation, AI, Infrastructure, and Software Engineering together into interconnected digital ecosystems. I enjoy understanding how independent technologies work and turning them into practical, maintainable systems — built with curiosity, clear documentation, and long-term ownership in mind.
 
 ## 🔄 How I Work
 
@@ -28,7 +28,7 @@ I bring Full Stack development, Automation, AI, Infrastructure, and Software Eng
 | --- | --- | --- |
 | **Automation Systems** | Connecting workflows and reducing repetitive operations. | n8n · ComfyUI |
 | **AI Integration & Agents** | Model orchestration, tool integrations, practical AI workflows. | Gentle AI · Gentle Shell · Engram · llama.cpp · Cloud models · MCP |
-| **Infrastructure & Self-Hosting** | Local environments, containers, cloud services, connected systems. | Linux & Windows · Docker · Cloudflare · Supabase (PostgreSQL), expanding into other databases |
+| **Infrastructure & Self-Hosting** | Local environments, containers, cloud services, connected systems. | Linux & Windows · Docker · Cloudflare · Supabase (PostgreSQL) · other databases in progress |
 | **Full-Stack Development** | Applications across frontend, backend, APIs, and databases. | — |
 | **Systems Architecture** | Services, data, and processes working as a coherent ecosystem. | — |
 | **Experiments & Tools** | Exploring new technologies and building useful prototypes. | — |
