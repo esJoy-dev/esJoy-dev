@@ -31,7 +31,7 @@ I bring full stack development, automation, AI, and infrastructure together into
 | **Systems Architecture** | Services, data, and processes working as a coherent ecosystem. | — |
 | **Experiments & Tools** | Exploring new technologies and building useful prototypes. | — |
 
-*Tools and environments I use — not a claim of equal expertise in each. Terminal-first workflows.*
+*Tools and environments I use is not a claim of equal expertise in each. Terminal-first workflows.*
 
 ## 🌱 The Dome Connection
 
