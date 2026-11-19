@@ -1,9 +1,17 @@
-# Local agent tooling (Gentle Shell skill registry)
+# Local agent tooling (skill registry)
 .atl/
 
 # OS/editor noise
 .DS_Store
 Thumbs.db
 
+# Python cache (banner pipeline scripts)
+__pycache__/
+*.pyc
+
 # Local working notes, not published
 SETUP.md
+
+# Banner intermediates only — WORKFLOW.md, enhance.py and fade_bottom.py are
+# tracked on purpose (see assets/banner/WORKFLOW.md)
+assets/banner/work/
