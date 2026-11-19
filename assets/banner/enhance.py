@@ -1,22 +1,24 @@
 #!/usr/bin/env python3
-"""Deterministic beauty pass: hue-preserving bloom + luminance clarity.
-No saturation push, no diffusion — color identity provably unchanged.
-Input:  work/source-new.png  ->  Output: work/art-enhanced.png
-See WORKFLOW.md rows 16-17."""
+"""Gentle deterministic beauty pass: hue-preserving bloom + a light luminance lift.
+
+No saturation push, no diffusion — colour identity is preserved by construction,
+because every step scales luminance and keeps per-pixel channel ratios.
+
+Input:  work/originalbanner.png  ->  Output: work/art-enhanced.png
+Canvas stays at the source resolution; see WORKFLOW.md."""
 from PIL import Image, ImageFilter
 import numpy as np
 
-SRC, OUT = "work/source-new.png", "work/art-enhanced.png"
-W        = 2560
-BLOOM    = 0.17    # glow strength (additive light, in the SAME hues)
+SRC, OUT = "work/originalbanner.png", "work/art-enhanced.png"
+BLOOM    = 0.12    # glow strength (additive light, in the SAME hues)
 THRESH   = 0.55    # only pixels brighter than this emit glow (keeps navy flat)
 SOFT     = 0.25    # ramp width above the threshold
-CLAR     = 0.40    # luminance local-contrast gain ("clarity")
-CURVE    = 0.05    # gentle S-curve on luminance: deeper darks, lift on lights
-SHARP    = dict(radius=1.3, percent=35, threshold=3)  # final linework crispness
+CLAR     = 0.18    # luminance local-contrast gain ("clarity")
+CURVE    = 0.03    # gentle S-curve on luminance: deeper darks, lift on lights
+SHARP    = dict(radius=1.2, percent=20, threshold=3)  # final linework crispness
 
 im = Image.open(SRC).convert("RGB")
-im = im.resize((W, round(im.height * W / im.width)), Image.LANCZOS)
+W = im.width
 a = np.asarray(im, dtype=np.float32) / 255.0
 Y = np.array([0.2126, 0.7152, 0.0722], dtype=np.float32)
 
@@ -40,4 +42,4 @@ out = np.clip(out * ratio[..., None], 0, 1)
 # 3) thresholded unsharp: crisps icons/terminal text without white halos on neon edges
 Image.fromarray((out * 255).astype(np.uint8)).filter(
     ImageFilter.UnsharpMask(**SHARP)).save(OUT)
-print(f"wrote {OUT} at {W} wide")
+print(f"wrote {OUT} at {im.width} wide")

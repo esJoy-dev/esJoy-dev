@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/banner.png" alt="An engineer in an esJoy hoodie works at a glass desk with a laptop showing a clean git status, a monkey mascot at his side; a neon data pipeline spans a world map toward a luminous dome on the right containing a tree with glowing circuit roots, two server racks, orbiting hexagonal tech icons, and a padlock shield at the dome's base." width="100%" />
+  <img src="assets/banner.webp" alt="An engineer in an esJoy hoodie works at a glass desk with a laptop showing a clean git status, a monkey mascot at his side; a neon data pipeline spans a world map toward a luminous dome on the right containing a tree with glowing circuit roots, two server racks, orbiting hexagonal tech icons, and a padlock shield at the dome's base." width="100%" />
 </div>
 
 # 👋 Hello, I'm esJoy
@@ -31,7 +31,7 @@ I bring full stack development, automation, AI, and infrastructure together into
 | **Systems Architecture** | Services, data, and processes working as a coherent ecosystem. | — |
 | **Experiments & Tools** | Exploring new technologies and building useful prototypes. | — |
 
-*Tools and environments I use, Not a claim of equal expertise in each · terminal-first workflows.*
+*Tools and environments I use — not a claim of equal expertise in each. Terminal-first workflows.*
 
 ## 🌱 The Dome Connection
 
