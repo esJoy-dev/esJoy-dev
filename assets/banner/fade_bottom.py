@@ -38,18 +38,17 @@ ALPHA_Q      = 100      # keep the alpha ramp exact
 # rendered result before shipping — a misfire crops visible art WITHOUT failing.
 CONTENT_SAT = 0.25      # saturation (max-min)/max above which a pixel is "coloured"
 CONTENT_LUM = 0.06      # luminance above which a pixel is lit rather than floor
-Y = np.array([0.2126, 0.7152, 0.0722], dtype=np.float32)
+LUMA_WEIGHTS = np.array([0.2126, 0.7152, 0.0722], dtype=np.float32)  # Rec. 709 luma — CONTENT_LUM is measured with this weighting
 
 
 def content_bottom(im):
     """Lowest row containing coloured content; None when nothing classifies."""
     a = np.asarray(im.convert("RGB"), dtype=np.float32) / 255.0
-    lum = a @ Y
+    lum = a @ LUMA_WEIGHTS
     mx, mn = a.max(axis=2), a.min(axis=2)
-    # One zero-guard is load-bearing: mx == 0 means black, never content, so the
-    # masked np.where keeps the division defined; no second divisor floor needed.
-    # np.where evaluates both branches eagerly, so the divisor floor (not the
-    # mask) is what keeps black pixels (mx == 0) from dividing by zero.
+    # Zero-guard: np.where evaluates both branches eagerly, so the divisor
+    # floor (not the mx > 0 mask) is what keeps black pixels (mx == 0) from
+    # dividing by zero. Removing the floor breaks the run with warnings.
     sat = np.where(mx > 0, (mx - mn) / np.maximum(mx, 1e-12), 0.0)
     rows = np.where(((sat > CONTENT_SAT) & (lum > CONTENT_LUM)).any(axis=1))[0]
     return int(rows.max()) if len(rows) else None
