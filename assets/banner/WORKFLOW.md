@@ -9,7 +9,7 @@ produces the same `banner.webp`.
 | Stage | Script | Input | Output |
 | --- | --- | --- | --- |
 | 1. Enhance (optional) | `enhance.py` | `work/originalbanner.png` | `work/art-enhanced.png` |
-| 2. Fade + encode | `fade_bottom.py` | `work/art-enhanced.png` | `../banner.webp` |
+| 2. Fade + encode | `fade_bottom.py` | `work/art-enhanced.png` (or `SRC`) | `../banner.webp` (or `OUT`) |
 
 Stage 1 is skipped when the delivered art already has the look you want — point
 stage 2 straight at the master. Both the input and the output path of stage 2
@@ -72,7 +72,7 @@ cd assets/banner
 mkdir -p work
 cp /path/to/artwork.png work/originalbanner.png
 python3 enhance.py                              # optional
-SRC=work/originalbanner.png python3 fade_bottom.py   # or rely on art-enhanced.png
+python3 fade_bottom.py                          # or omit SRC to use the stage-1 output
 ```
 
 Requires `Pillow` and `numpy`.
