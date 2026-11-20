@@ -43,8 +43,8 @@ small lift, not a restyle. Stronger settings (the 2026-11-19 pass used
 The heading should sit close to the artwork, so the script finds the lowest row
 holding coloured content and trims the dead floor below it:
 
-- **Trim** to `content_bottom + 1.62 % of width` — breathing room, nothing more.
-- **Fade** the last `4.3 %` of the width on an alpha ramp (`EXP 0.65`, hold then
+- **Trim** to `content_bottom + 0.80 % of width` — breathing room, nothing more.
+- **Fade** the last `5.0 %` of the width on an alpha ramp (`EXP 0.65`, hold then
   fall), starting below the world map so the map stays at full strength.
 - **Pad** a final `0.2 %` of fully transparent band.
 

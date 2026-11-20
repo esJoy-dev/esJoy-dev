@@ -1,55 +1,80 @@
 #!/usr/bin/env python3
 """Fade the banner into the page background and write the shipped WebP.
 
-The bottom of the art dissolves via an alpha ramp (hold, then fall), the dead
-floor below the artwork is trimmed so the heading sits close to the art, and the
-canvas extends with a thin fully transparent band. The band is TRANSPARENT, not
-black: that is what makes the banner sit correctly on both the dark and the
-light GitHub theme.
+Default input: work/art-enhanced.png (stage 1 output). To run on the master
+directly and skip stage 1, set SRC, e.g.:
+    SRC=work/originalbanner.png python3 fade_bottom.py
 
-Input:  work/originalbanner.png -> work/art-enhanced.png -> ../banner.webp
+What it does, in order:
+1. Trim: find the lowest row of coloured content and keep only a small margin of
+   floor below it, so the heading in README sits close to the artwork.
+2. Fade: dissolve the bottom of the art on an alpha ramp (hold, then fall).
+3. Pad: extend the canvas with a thin FULLY TRANSPARENT band below the art.
+
+The band is TRANSPARENT, not black: that is what makes the banner sit correctly
+on both the dark and the light GitHub theme. A baked black band would leave a
+visible stripe on the light theme.
 See WORKFLOW.md."""
 from PIL import Image
 import numpy as np
 import os
 
-SRC = os.environ.get("SRC", "work/art-enhanced.png")   # override to skip stage 1
+SRC = os.environ.get("SRC", "work/art-enhanced.png")
 OUT = os.environ.get("OUT", "../banner.webp")
-MARGIN_RATIO  = 0.0162   # breathing room kept below the lowest coloured pixel
-FADE_RATIO    = 0.0430   # px of art that dissolve, as a fraction of canvas width
-PAD_RATIO     = 0.0020   # fully transparent band below the art
-EXP           = 0.65     # <1 = hold the brightness, then drop late (natural fall-off)
-QUALITY       = 95       # visually indistinguishable from the source at 5x zoom
-ALPHA_Q       = 100      # keep the alpha ramp exact
-CONTENT_SAT   = 0.25     # a pixel counts as content if it is this saturated...
-CONTENT_LUM   = 0.06     # ...and at least this bright
+
+# All geometry is a fraction of the canvas width, so the merge looks the same at
+# any resolution and the trim follows the art instead of a hardcoded height.
+MARGIN_RATIO = 0.0080   # floor kept below the lowest coloured row: 0.8 % of width
+FADE_RATIO   = 0.0500   # rows that dissolve: 5.0 % of width (starts above the art's lowest content)
+PAD_RATIO    = 0.0020   # fully transparent band below the art
+EXP          = 0.65     # <1 = hold the brightness, then drop late (natural fall-off)
+QUALITY      = 95       # visually indistinguishable from the source at 5x zoom
+ALPHA_Q      = 100      # keep the alpha ramp exact
+
+# Coloured-content detection. A pixel counts as content when BOTH hold:
+#   - it is saturated (neon, LED, glow: chroma >> luminance here), and
+#   - it is brighter than the floor.
+# The values are tuned for this artwork's palette: the navy floor and its
+# reflections sit under BOTH thresholds; map outlines and dome glow clear both.
+# If a future master uses a different palette, re-check the printed row and the
+# rendered result before shipping — a misfire crops visible art WITHOUT failing.
+CONTENT_SAT = 0.25      # saturation (max-min)/max above which a pixel is "coloured"
+CONTENT_LUM = 0.06      # luminance above which a pixel is lit rather than floor
 Y = np.array([0.2126, 0.7152, 0.0722], dtype=np.float32)
 
 
 def content_bottom(im):
-    """Lowest row holding neon/led content, so the trim follows the artwork."""
+    """Lowest row containing coloured content; None when nothing classifies."""
     a = np.asarray(im.convert("RGB"), dtype=np.float32) / 255.0
     lum = a @ Y
     mx, mn = a.max(axis=2), a.min(axis=2)
-    sat = np.where(mx > 0.05, (mx - mn) / np.maximum(mx, 1e-6), 0)
+    # One zero-guard is load-bearing: mx == 0 means black, never content, so the
+    # masked np.where keeps the division defined; no second divisor floor needed.
+    sat = np.where(mx > 0, (mx - mn) / np.maximum(mx, 1e-12), 0.0)
     rows = np.where(((sat > CONTENT_SAT) & (lum > CONTENT_LUM)).any(axis=1))[0]
-    return int(rows.max()) if len(rows) else im.height - 1
+    return int(rows.max()) if len(rows) else None
 
 
 im = Image.open(SRC).convert("RGBA")
 w, h = im.size
 bottom = content_bottom(im)
-crop_h = min(h, bottom + round(w * MARGIN_RATIO))
-im = im.crop((0, 0, w, crop_h))
-fade = min(round(w * FADE_RATIO), crop_h)
+if bottom is None:
+    # No coloured content detected: skip the trim (keep full height) and report
+    # it, so a silent mis-crop cannot happen on an unexpected master.
+    print("no coloured content detected — skipping trim, fading full height")
+    crop_h, fade_h = h, round(w * FADE_RATIO)
+else:
+    crop_h = min(h, bottom + round(w * MARGIN_RATIO))
+    fade_h = min(round(w * FADE_RATIO), crop_h)
 pad = round(w * PAD_RATIO)
 
+im = im.crop((0, 0, w, crop_h))
 alpha = np.array(im)[:, :, 3].astype(np.float64)
-alpha[crop_h - fade:, :] *= (np.linspace(1.0, 0.0, fade) ** EXP)[:, None]
+alpha[crop_h - fade_h:, :] *= (np.linspace(1.0, 0.0, fade_h) ** EXP)[:, None]
 im.putalpha(Image.fromarray(alpha.astype("uint8")))
 
 out = Image.new("RGBA", (w, crop_h + pad), (0, 0, 0, 0))
 out.paste(im, (0, 0), im)
 out.save(OUT, format="WEBP", quality=QUALITY, alpha_quality=ALPHA_Q, method=6)
 print(f"content ends at y={bottom}; wrote {OUT}: {w}x{crop_h + pad} "
-      f"(crop_h={crop_h}, fade={fade}, pad={pad}, q={QUALITY})")
+      f"(crop_h={crop_h}, fade={fade_h}, pad={pad}, q={QUALITY})")
