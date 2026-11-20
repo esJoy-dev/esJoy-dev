@@ -11,16 +11,14 @@ What it does, in order:
 2. Fade: dissolve the bottom of the art on an alpha ramp (hold, then fall).
 3. Pad: extend the canvas with a thin FULLY TRANSPARENT band below the art.
 
-The band is TRANSPARENT, not black: that is what makes the banner sit correctly
-on both the dark and the light GitHub theme. A baked black band would leave a
-visible stripe on the light theme.
-See WORKFLOW.md."""
+Geometry, thresholds and the transparent-band rationale are documented in
+WORKFLOW.md, the authority for this pipeline."""
 from PIL import Image
 import numpy as np
 import os
 
-SRC = os.environ.get("SRC", "work/art-enhanced.png")
-OUT = os.environ.get("OUT", "../banner.webp")
+SRC = os.environ.get("SRC", "work/art-enhanced.png")   # override to skip stage 1
+OUT = os.environ.get("OUT", "../banner.webp")           # default: repo assets/
 
 # All geometry is a fraction of the canvas width, so the merge looks the same at
 # any resolution and the trim follows the art instead of a hardcoded height.
@@ -50,6 +48,8 @@ def content_bottom(im):
     mx, mn = a.max(axis=2), a.min(axis=2)
     # One zero-guard is load-bearing: mx == 0 means black, never content, so the
     # masked np.where keeps the division defined; no second divisor floor needed.
+    # np.where evaluates both branches eagerly, so the divisor floor (not the
+    # mask) is what keeps black pixels (mx == 0) from dividing by zero.
     sat = np.where(mx > 0, (mx - mn) / np.maximum(mx, 1e-12), 0.0)
     rows = np.where(((sat > CONTENT_SAT) & (lum > CONTENT_LUM)).any(axis=1))[0]
     return int(rows.max()) if len(rows) else None
@@ -62,7 +62,7 @@ if bottom is None:
     # No coloured content detected: skip the trim (keep full height) and report
     # it, so a silent mis-crop cannot happen on an unexpected master.
     print("no coloured content detected — skipping trim, fading full height")
-    crop_h, fade_h = h, round(w * FADE_RATIO)
+    crop_h, fade_h = h, min(round(w * FADE_RATIO), h)  # never exceed the canvas
 else:
     crop_h = min(h, bottom + round(w * MARGIN_RATIO))
     fade_h = min(round(w * FADE_RATIO), crop_h)
@@ -76,5 +76,6 @@ im.putalpha(Image.fromarray(alpha.astype("uint8")))
 out = Image.new("RGBA", (w, crop_h + pad), (0, 0, 0, 0))
 out.paste(im, (0, 0), im)
 out.save(OUT, format="WEBP", quality=QUALITY, alpha_quality=ALPHA_Q, method=6)
-print(f"content ends at y={bottom}; wrote {OUT}: {w}x{crop_h + pad} "
+print(f"content ends at y={bottom if bottom is not None else 'not detected (no trim)'}; "
+      f"wrote {OUT}: {w}x{crop_h + pad} "
       f"(crop_h={crop_h}, fade={fade_h}, pad={pad}, q={QUALITY})")
