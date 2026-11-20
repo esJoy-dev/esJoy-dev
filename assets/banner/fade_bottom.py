@@ -46,10 +46,10 @@ def content_bottom(im):
     a = np.asarray(im.convert("RGB"), dtype=np.float32) / 255.0
     lum = a @ LUMA_WEIGHTS
     mx, mn = a.max(axis=2), a.min(axis=2)
-    # Zero-guard: np.where evaluates both branches eagerly, so the divisor
-    # floor (not the mx > 0 mask) is what keeps black pixels (mx == 0) from
-    # dividing by zero. Removing the floor breaks the run with warnings.
-    sat = np.where(mx > 0, (mx - mn) / np.maximum(mx, 1e-12), 0.0)
+    # Zero-guard, the only one: the divisor floor keeps black pixels (mx == 0)
+    # defined — 0/1e-12 is 0, never content. Removing the floor breaks the run
+    # with division warnings over the artwork's black pixels.
+    sat = (mx - mn) / np.maximum(mx, 1e-12)
     rows = np.where(((sat > CONTENT_SAT) & (lum > CONTENT_LUM)).any(axis=1))[0]
     return int(rows.max()) if len(rows) else None
 

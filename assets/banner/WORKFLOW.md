@@ -12,10 +12,12 @@ produces the same `banner.webp`.
 | 2. Fade + encode | `fade_bottom.py` | `work/art-enhanced.png` | `../banner.webp` |
 
 Stage 1 is skipped when the delivered art already has the look you want — point
-stage 2 straight at the master:
+stage 2 straight at the master. Both the input and the output path of stage 2
+are configurable through environment variables:
 
 ```sh
-SRC=work/originalbanner.png python3 fade_bottom.py
+SRC=work/originalbanner.png python3 fade_bottom.py          # input override
+SRC=work/originalbanner.png OUT=/tmp/preview.webp python3 fade_bottom.py
 ```
 
 The canvas stays at the source resolution (1981 px wide). Upscaling a render adds
