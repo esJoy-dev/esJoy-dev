@@ -1,16 +1,8 @@
-<div align="center">
-  <img src="assets/banner.webp" alt="A neon-lit monkey operator works at a floating status panel with a network node icon beside it; a glowing data pipeline runs across a world map toward a glass dome on the right that holds a luminous tree with circuit roots, two server racks, orbiting hexagonal tech icons, and a padlock shield at the base." width="100%" />
-</div>
-
 # 👋 Hello, I'm esJoy
 
 > I design and build agent systems that keep humans in charge.
 
 I bring full stack development, automation, AI, and infrastructure together into interconnected systems you can see, review and own. I enjoy understanding how independent technologies work and turning them into practical, maintainable ecosystems built with curiosity and clear documentation.
-
-<div align="center">
-  <img src="assets/engineering-workflow.svg" alt="Animated engineering loop: humans set direction in Explore and Architect; agents iterate an Implement-Verify delivery loop; the human approval gate declines work once, then approves on the second pass; Release powers on only after approval and feeds an operate-and-learn arc back into direction. Security runs across every phase. Animation is decorative; the static diagram is complete on its own." width="100%" />
-</div>
 
 ## 🧭 Engineering Philosophy
 
@@ -19,6 +11,10 @@ I bring full stack development, automation, AI, and infrastructure together into
 - **Automate with intention.** Preserve human review and control where it matters.
 - **Stay adaptable.** Avoid unnecessary dependence on one model, platform, or provider.
 - **Keep exploring.** Experimentation is part of the engineering process.
+
+<div align="center">
+  <img src="assets/engineering-workflow.svg" alt="Animated engineering loop: humans set direction in Explore and Architect; agents iterate an Implement-Verify delivery loop; the human approval gate declines work once, then approves on the second pass; Release powers on only after approval and feeds an operate-and-learn arc back into direction. Security runs across every phase. Animation is decorative; the static diagram is complete on its own." width="100%" />
+</div>
 
 ## 🛠️ Focus Areas & Stack
 
@@ -32,6 +28,10 @@ I bring full stack development, automation, AI, and infrastructure together into
 | **Experiments & Tools** | Exploring new technologies and building useful prototypes. | — |
 
 *The tools and environments I use are not a claim of equal expertise in each. Terminal-first workflows.*
+
+<div align="center">
+  <img src="assets/banner.webp" alt="A neon-lit monkey operator works at a floating status panel with a network node icon beside it; a glowing data pipeline runs across a world map toward a glass dome on the right that holds a luminous tree with circuit roots, two server racks, orbiting hexagonal tech icons, and a padlock shield at the base." width="100%" />
+</div>
 
 ## 🌱 The Dome Connection
 
