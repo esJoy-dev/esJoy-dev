@@ -8,12 +8,21 @@ produces the same `banner.webp`.
 
 | Stage | Script | Input | Output |
 | --- | --- | --- | --- |
-| 1. Enhance | `enhance.py` | `work/originalbanner.png` | `work/art-enhanced.png` |
-| 2. Fade | `fade_bottom.py` | `work/art-enhanced.png` | `../banner.webp` |
+| 1. Enhance (optional) | `enhance.py` | `work/originalbanner.png` | `work/art-enhanced.png` |
+| 2. Fade + encode | `fade_bottom.py` | `work/art-enhanced.png` (or `SRC`) | `../banner.webp` (or `OUT`) |
 
-The canvas stays at the source resolution (2172 px wide) — upscaling a render
-adds no detail and only costs bytes. `work/` holds the master and the
-intermediates and is git-ignored.
+Stage 1 is skipped when the delivered art already has the look you want — point
+stage 2 straight at the master. Both the input and the output path of stage 2
+are configurable through environment variables:
+
+```sh
+SRC=work/originalbanner.png python3 fade_bottom.py          # input override
+SRC=work/originalbanner.png OUT=/tmp/preview.webp python3 fade_bottom.py
+```
+
+The canvas stays at the source resolution (1981 px wide). Upscaling a render adds
+no detail and only costs bytes. `work/` holds the master and the intermediates
+and is git-ignored.
 
 ## Stage 1 — enhance (`enhance.py`)
 
@@ -27,16 +36,22 @@ A gentle, hue-preserving pass, deliberately restrained:
 - **Thresholded unsharp** (`radius 1.2`, `percent 20`, `threshold 3`) so linework
   and small text stay crisp without halos on neon edges.
 
-Stronger settings exist (the 2026-11-19 pass used `BLOOM 0.17 / CLAR 0.40 /
-percent 35`); they read as over-processed on the neon arcs and are not used.
+On the current art this raises the 99th-percentile luminance from 78 to 88 — a
+small lift, not a restyle. Stronger settings (the 2026-11-19 pass used
+`BLOOM 0.17 / CLAR 0.40 / percent 35`) read as over-processed on the neon arcs.
 
-## Stage 2 — fade (`fade_bottom.py`)
+## Stage 2 — fade + encode (`fade_bottom.py`)
 
-Merges the art into the page background: the last `4.3 %` of the canvas width
-dissolves on an alpha ramp (`EXP 0.65`, hold then fall), and the canvas extends
-`1.56 %` of its width as a fully transparent band below the art. The ramp is a
-fraction of the width, not a fixed pixel count, so the merge looks the same at
-any resolution.
+The heading should sit close to the artwork, so the script finds the lowest row
+holding coloured content and trims the dead floor below it:
+
+- **Trim** to `content_bottom + 0.80 % of width` — breathing room, nothing more.
+- **Fade** the last `5.0 %` of the width on an alpha ramp (`EXP 0.65`, hold then
+  fall), starting below the world map so the map stays at full strength.
+- **Pad** a final `0.2 %` of fully transparent band.
+
+All three are fractions of the canvas width, so the merge looks the same at any
+resolution, and the trim follows the art instead of a hardcoded pixel height.
 
 The band is **transparent, not black**: that is what makes the banner sit
 correctly on both the dark and the light GitHub theme. A baked black band would
@@ -46,9 +61,9 @@ leave a visible stripe on the light theme.
 
 `fade_bottom.py` writes WebP at `quality 95`, `alpha_quality 100`, `method 6`.
 At 5× zoom on the hardest regions (the dome glow arc, the dotted mesh, the leaf
-detail) this is visually indistinguishable from a lossless encode, at ~330 KiB
-instead of ~1 450 KiB or ~2 900 KiB for PNG. `alpha_quality 100` keeps the fade
-ramp bit-exact.
+detail) this is visually indistinguishable from a lossless encode, at ~210 KiB
+instead of ~1 000 KiB lossless or ~2 000 KiB PNG. `alpha_quality 100` keeps the
+fade ramp bit-exact.
 
 ## Run
 
@@ -56,15 +71,15 @@ ramp bit-exact.
 cd assets/banner
 mkdir -p work
 cp /path/to/artwork.png work/originalbanner.png
-python3 enhance.py
-python3 fade_bottom.py          # writes ../banner.webp
+python3 enhance.py                              # optional
+python3 fade_bottom.py                          # or omit SRC to use the stage-1 output
 ```
 
 Requires `Pillow` and `numpy`.
 
 ## Checklist before swapping the art
 
-- [ ] No readable text baked into the image.
+- [ ] No readable text baked into the image — identity comes from the heading.
 - [ ] Sharp at 100 % zoom.
 - [ ] Composes on both light and dark themes (the transparent band is what makes
       this work — do not crop it).
@@ -72,6 +87,6 @@ Requires `Pillow` and `numpy`.
 
 ## GitHub render notes
 
-The profile README column caps around 1500 CSS px. The source is 2172 px wide,
-which covers ~1.4× density — sharp on standard and most HiDPI displays, and well
-under GitHub's file-size limits at ~330 KiB.
+The profile README column caps around 1500 CSS px. The source is 1981 px wide
+(~1.3× density) at ~210 KiB — comfortably under every GitHub limit, with room to
+go to 3000 px if true 2× density ever matters.
