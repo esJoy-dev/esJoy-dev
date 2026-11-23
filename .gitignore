@@ -11,6 +11,7 @@ __pycache__/
 
 # Local working notes, not published
 SETUP.md
+odd/
 
 # Banner intermediates only — WORKFLOW.md, enhance.py and fade_bottom.py are
 # tracked on purpose (see assets/banner/WORKFLOW.md)

@@ -4,21 +4,27 @@
 
 # 👋 Hello, I'm esJoy
 
-> I design and build agent systems that keep humans in charge.
+> I design and build agent systems that keep the user in charge.
 
 I bring full stack development, automation, AI, and infrastructure together into interconnected systems you can see, review and own. I enjoy understanding how independent technologies work and turning them into practical, maintainable ecosystems built with curiosity and clear documentation.
-
-<div align="center">
-  <img src="assets/engineering-workflow.svg" alt="Animated engineering loop: humans set direction in Explore and Architect; agents iterate an Implement-Verify delivery loop; the human approval gate declines work once, then approves on the second pass; Release powers on only after approval and feeds an operate-and-learn arc back into direction. Security runs across every phase. Animation is decorative; the static diagram is complete on its own." width="100%" />
-</div>
 
 ## 🧭 Engineering Philosophy
 
 - **Understand and service the system.** Favor transparency, documentation, and transferable knowledge.
 - **Build for real use.** Prioritize maintainability over unnecessary complexity.
-- **Automate with intention.** Preserve human review and control where it matters.
+- **Automate with intention.** Preserve user review and control where it matters.
 - **Stay adaptable.** Avoid unnecessary dependence on one model, platform, or provider.
 - **Keep exploring.** Experimentation is part of the engineering process.
+
+## 🧪 The LAB — where this runs for real
+
+Self-hosted bench on my own hardware. Local-first: workloads and data stay on the machine unless I explicitly decide otherwise. Services are loopback-only by default; anything that must be reached remotely goes through an authenticated gateway, never a raw port. Agents propose, the user approves — no agent change ships without passing the gate.
+
+- **Audit-first.** Every change starts read-only: inventory, probe, understand — then act.
+- **Hunt your own leaks.** A recent audit caught a local service bound to all interfaces with no auth. Remediated to loopback-only, documented, runbooked.
+- **Post-fix runbooks.** If it surprised me once, it's written down so it can't surprise me twice.
+
+_The LAB is shared at concept level on purpose: methods and lessons, never live endpoints, ports, or versions._
 
 ## 🛠️ Focus Areas & Stack
 
@@ -27,17 +33,20 @@ I bring full stack development, automation, AI, and infrastructure together into
 | **Automation Systems** | Connecting workflows and reducing repetitive operations. | n8n · ComfyUI |
 | **AI Integration & Agents** | Model orchestration, tool integrations, practical AI workflows. | Gentle AI · Gentle Shell · Engram · llama.cpp · Cloud models · MCP |
 | **Infrastructure & Self-Hosting** | Local environments, containers, cloud services, connected systems. | Linux & Windows · Docker · Cloudflare · Supabase (PostgreSQL) · other databases in progress |
-| **Full-Stack Development** | Applications across frontend, backend, APIs, and databases. | — |
-| **Systems Architecture** | Services, data, and processes working as a coherent ecosystem. | — |
-| **Experiments & Tools** | Exploring new technologies and building useful prototypes. | — |
 
-*The tools and environments I use are not a claim of equal expertise in each. Terminal-first workflows.*
+_The tools and environments I use are not a claim of equal expertise in each. Terminal-first workflows._
+
+## 🔄 How work ships
+
+<div align="center">
+  <img src="assets/engineering-workflow.svg" alt="Animated engineering loop: the user sets direction in Explore and Architect; agents iterate an Implement-Verify delivery loop; the user approval gate declines work once, then approves on the second pass; Release powers on only after approval and feeds an operate-and-learn arc back into direction. Security runs across every phase. Animation is decorative; the static diagram is complete on its own." width="100%" />
+</div>
+
+Every agent change moves through this loop: agents iterate, the user's gate decides, and only approved work ships. Security runs across every phase — the guard band under the loop is the same one that stamps the release.
 
 ## 🌱 The Dome Connection
 
-[Dome](https://neodome.app) is a framework I'm developing around interconnected, autonomous digital ecosystems.
-The dome represents an environment where infrastructure, intelligent agents, workflows, and security work together. The Tree represents growth and adaptation; its roots connect the ecosystem's components while keeping the system understandable and under human control.
-Dome is one expression of my engineering philosophy, not the limit of what I design. → **[Visit Dome](https://neodome.app)**
+[Dome](https://neodome.app) is a framework I'm developing around interconnected, autonomous digital ecosystems: local agents, self-hosted infrastructure, and workflows that stay under the user's control. The Tree represents growth and adaptation; its roots connect the ecosystem's components while keeping the system understandable. Dome is one expression of my engineering philosophy, not the limit of what I design. → **[Visit Dome](https://neodome.app)**
 
 ## 🤝 Let's Connect
 
