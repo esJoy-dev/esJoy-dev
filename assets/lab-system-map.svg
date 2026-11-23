@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="700" viewBox="0 0 1500 700" role="img" aria-labelledby="title desc">
+<title id="title">The LAB, cross-section</title>
+<desc id="desc">A static-complete diagram of the LAB, a self-hosted local-first bench. Inside the local-only boundary, a workstation runs automation, generation, and local-model services with agent lanes that build and verify; data and work stay on owner hardware, and findings live in runbooks as lessons rather than live endpoints. On the boundary, a user gate holds all egress: an outside request first waits at the gate, then is approved, and only then does a streak cross the authenticated-gateway edge toward cloud models and web services outside. Results and lessons come home. A guard-blue security band runs beneath everything: audit-first probes before any change, loopback by default, unfixed findings never published. Animation is decorative; the diagram is complete without it.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#061826"/><stop offset=".55" stop-color="#0e2a40"/><stop offset="1" stop-color="#122540"/></linearGradient>
+ <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#3a6683" stroke-opacity=".16" stroke-width="1"/></pattern>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#28516b" stop-opacity=".76"/><stop offset=".48" stop-color="#1a314b" stop-opacity=".78"/><stop offset="1" stop-color="#262b53" stop-opacity=".86"/></linearGradient>
+ <marker id="cyanArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L10 5L0 10Z" fill="#4de8f5"/></marker>
+ <marker id="violetArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L10 5L0 10Z" fill="#b08cff"/></marker>
+ <style>
+  .fx{opacity:0;animation-duration:16s;animation-iteration-count:infinite;animation-timing-function:ease-in-out}
+  .cm{fill:none;stroke-linecap:round;animation-timing-function:linear}
+  .kDome{animation-name:kDome}.kLanes{animation-name:kLanes}.kPkt{animation-name:kPkt}.kGate{animation-name:kGate}.kDeny{animation-name:kDeny}.kOk{animation-name:kOk}.kEg{animation-name:kEg}.kCloud{animation-name:kCloud}.kRet{animation-name:kRet}.kHome{animation-name:kHome}
+  @keyframes kDome{0%{opacity:0}1.5%{opacity:.85}6%{opacity:.85}7.5%,100%{opacity:0}}
+  @keyframes kLanes{0%,11.9%{opacity:0}13%{opacity:.85}20%{opacity:.85}21.3%,100%{opacity:0}}
+  @keyframes kPkt{0%,13.5%{opacity:0;stroke-dashoffset:16}14.2%{opacity:1}15.8%{opacity:1}16.6%,100%{opacity:0;stroke-dashoffset:-19}}
+  @keyframes kGate{0%,36%{opacity:0}37%{opacity:.85}50%{opacity:.85}51.5%,100%{opacity:0}}
+  @keyframes kDeny{0%,38.5%{opacity:0}39.2%{opacity:1}45%{opacity:1}46%,100%{opacity:0}}
+  @keyframes kOk{0%,55%{opacity:0}56%{opacity:1}62.5%{opacity:1}63.5%,100%{opacity:0}}
+  @keyframes kEg{0%,56.5%{opacity:0;stroke-dashoffset:20}57.2%{opacity:1}60.5%{opacity:1}61.3%,100%{opacity:0;stroke-dashoffset:-153}}
+  @keyframes kCloud{0%,56%{opacity:0}57%{opacity:.85}63%{opacity:.85}64%,100%{opacity:0}}
+  @keyframes kRet{0%,70%{opacity:0;stroke-dashoffset:26}71%{opacity:1}77%{opacity:1}78%,100%{opacity:0;stroke-dashoffset:-926}}
+  @keyframes kHome{0%,78%{opacity:0}79%{opacity:.75}84%{opacity:.75}85%,100%{opacity:0}}
+  @keyframes breathe{0%,100%{opacity:.55}50%{opacity:1}}
+  .breathe{animation:breathe 4s ease-in-out infinite}
+  @media (prefers-reduced-motion:reduce){.fx,.breathe{animation:none}}
+ </style>
+</defs>
+<rect x="5" y="5" width="1490" height="690" rx="28" fill="url(#bg)" stroke="#32617f" stroke-width="2"/>
+<rect x="8" y="8" width="1484" height="684" rx="26" fill="url(#grid)"/>
+<rect x="40" y="28" width="5" height="26" rx="2.5" fill="#45e5f5"/>
+<text x="55" y="49" fill="#f0f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="bold" letter-spacing="2">THE LAB — MY SELF-HOSTED BENCH</text>
+<text x="1460" y="45" text-anchor="end" fill="#9fb3c8" font-family="Arial, Helvetica, sans-serif" font-size="13">concept level — methods and lessons, never live endpoints</text>
+
+<!-- local-only boundary -->
+<rect x="50" y="80" width="700" height="390" rx="36" fill="none" stroke="#45a2ff" stroke-width="2.5" stroke-opacity=".9"/>
+<rect x="260" y="68" width="280" height="26" rx="13" fill="#101b34" stroke="#45a2ff" stroke-width="1.5"/>
+<text x="400" y="85" text-anchor="middle" fill="#d6e6ff" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" letter-spacing="1">LOCAL-ONLY · LOOPBACK BY DEFAULT</text>
+
+<!-- workstation dome interior -->
+<rect x="70" y="100" width="660" height="350" rx="30" fill="url(#glass)" stroke="#4de8f5" stroke-width="2"/>
+<text x="95" y="137" fill="#f5f9ff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" letter-spacing="1">MY WORKSTATION — DOME INTERIOR</text>
+<rect x="585" y="118" width="130" height="26" rx="13" fill="#0f493f" stroke="#56e7af" stroke-width="1.4"/><text x="650" y="135" text-anchor="middle" fill="#b8ffe1" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" letter-spacing="1">SELF-HOSTED</text>
+
+<!-- sealed local services -->
+<rect x="95" y="165" width="185" height="58" rx="14" fill="#14324a" stroke="#4de8f5" stroke-width="1.6"/>
+<circle cx="110" cy="180" r="4" fill="#56e7af" class="breathe"/>
+<text x="125" y="184" fill="#f5f9ff" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold">AUTOMATION</text>
+<text x="125" y="205" fill="#9fb3c8" font-family="Arial, Helvetica, sans-serif" font-size="13">n8n workflow runs</text>
+<rect x="300" y="165" width="200" height="58" rx="14" fill="#14324a" stroke="#4de8f5" stroke-width="1.6"/>
+<circle cx="315" cy="180" r="4" fill="#56e7af" class="breathe"/>
+<text x="330" y="184" fill="#f5f9ff" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold">GENERATION</text>
+<text x="330" y="205" fill="#9fb3c8" font-family="Arial, Helvetica, sans-serif" font-size="13">ComfyUI pipelines</text>
+<rect x="520" y="165" width="185" height="58" rx="14" fill="#14324a" stroke="#4de8f5" stroke-width="1.6"/>
+<circle cx="535" cy="180" r="4" fill="#56e7af" class="breathe"/>
+<text x="555" y="184" fill="#f5f9ff" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold">LOCAL MODELS</text>
+<text x="555" y="205" fill="#9fb3c8" font-family="Arial, Helvetica, sans-serif" font-size="13">llama.cpp, self-run</text>
+
+<!-- local flows: services feed the agent lanes -->
+<path d="M187 223V246" fill="none" stroke="#4de8f5" stroke-width="2.5" marker-end="url(#cyanArrow)"/>
+<path d="M400 223V246" fill="none" stroke="#4de8f5" stroke-width="2.5" marker-end="url(#cyanArrow)"/>
+<path d="M612 223V246" fill="none" stroke="#4de8f5" stroke-width="2.5" marker-end="url(#cyanArrow)"/>
+
+<!-- agent lanes -->
+<rect x="95" y="252" width="610" height="96" rx="16" fill="#1c2344" fill-opacity=".55" stroke="#b08cff" stroke-width="1.8"/>
+<text x="115" y="278" fill="#d8c9ff" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" letter-spacing="1">AGENT LANES — BUILD &amp; VERIFY INSIDE THE BENCH</text>
+<rect x="115" y="290" width="150" height="44" rx="10" fill="#14324a" stroke="#4de8f5" stroke-width="1.5"/><text x="190" y="317" text-anchor="middle" fill="#f5f9ff" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold">IMPLEMENT</text>
+<rect x="305" y="290" width="150" height="44" rx="10" fill="#14324a" stroke="#4de8f5" stroke-width="1.5"/><text x="380" y="317" text-anchor="middle" fill="#f5f9ff" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold">VERIFY</text>
+<path d="M265 312H300" fill="none" stroke="#4de8f5" stroke-width="2.5" marker-end="url(#cyanArrow)"/>
+<path d="M380 338H190" fill="none" stroke="#b08cff" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#violetArrow)"/>
+<text x="285" y="352" text-anchor="middle" fill="#cdbdff" font-family="Arial, Helvetica, sans-serif" font-size="12">rework loop</text>
+<text x="585" y="308" text-anchor="middle" fill="#cdbdff" font-family="Arial, Helvetica, sans-serif" font-size="13">agents propose —</text>
+<text x="585" y="326" text-anchor="middle" fill="#cdbdff" font-family="Arial, Helvetica, sans-serif" font-size="13">the user disposes</text>
+
+<!-- lanes feed data and runbooks -->
+<path d="M400 348V392" fill="none" stroke="#4de8f5" stroke-width="2.5" marker-end="url(#cyanArrow)"/>
+<path d="M560 348V392" fill="none" stroke="#4de8f5" stroke-width="2.5" marker-end="url(#cyanArrow)"/>
+<rect x="95" y="396" width="280" height="54" rx="14" fill="#14324a" stroke="#56e7af" stroke-width="1.6"/>
+<text x="115" y="418" fill="#f5f9ff" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold">DATA &amp; WORK</text>
+<text x="115" y="438" fill="#9fb3c8" font-family="Arial, Helvetica, sans-serif" font-size="13">stays on owner hardware by default</text>
+<rect x="400" y="396" width="305" height="54" rx="14" fill="#14324a" stroke="#b08cff" stroke-width="1.6"/>
+<text x="420" y="418" fill="#f5f9ff" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold">RUNBOOKS &amp; AUDIT NOTES</text>
+<text x="420" y="438" fill="#9fb3c8" font-family="Arial, Helvetica, sans-serif" font-size="13">lessons recorded — never live endpoints</text>
+
+<!-- user gate on the boundary -->
+<g class="fx kDeny"><circle cx="770" cy="205" r="12.5" fill="#6e3f11" stroke="#ffb454" stroke-width="2.5"/><path d="M764.5 199.5l11 11 M775.5 199.5l-11 11" fill="none" stroke="#ffdcae" stroke-width="2.8" stroke-linecap="round"/></g>
+<g class="fx kOk"><circle cx="770" cy="205" r="12.5" fill="#0f4d35" stroke="#56e7af" stroke-width="2.5"/><path d="M763.5 205l4.5 5 8.5 -9.5" fill="none" stroke="#b8ffe1" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></g>
+<path d="M770 213L812 255 770 297 728 255Z" fill="#0f3b34" stroke="#56e7af" stroke-width="2"/>
+<text x="770" y="250" text-anchor="middle" fill="#b8ffe1" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" letter-spacing="1">USER</text>
+<text x="770" y="268" text-anchor="middle" fill="#b8ffe1" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" letter-spacing="1">GATE</text>
+<text x="770" y="318" text-anchor="middle" fill="#d7e5f2" font-family="Arial, Helvetica, sans-serif" font-size="13">egress waits here</text>
+
+<!-- authenticated gateway egress -->
+<path d="M812 255H985" fill="none" stroke="#b08cff" stroke-width="2.5" stroke-dasharray="9 8" marker-end="url(#violetArrow)"/>
+<text x="900" y="238" text-anchor="middle" fill="#cdbdff" font-family="Arial, Helvetica, sans-serif" font-size="13">authenticated gateway — never a raw port</text>
+
+<!-- outside zone -->
+<rect x="1000" y="100" width="430" height="350" rx="24" fill="#17293f" stroke="#7491ac" stroke-width="1.8"/>
+<text x="1025" y="137" fill="#f5f9ff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" letter-spacing="1">OUTSIDE — OPT-IN ONLY</text>
+<rect x="1290" y="118" width="120" height="26" rx="13" fill="#1c2344" stroke="#ffb454" stroke-width="1.3"/><text x="1350" y="135" text-anchor="middle" fill="#ffdcae" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" letter-spacing="1">STANDBY</text>
+<text x="1025" y="158" fill="#9fb3c8" font-family="Arial, Helvetica, sans-serif" font-size="13">nothing crosses unless the user says so</text>
+<rect x="1025" y="190" width="185" height="58" rx="14" fill="#14324a" stroke="#7491ac" stroke-width="1.4"/>
+<text x="1045" y="212" fill="#f5f9ff" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold">CLOUD MODELS</text>
+<text x="1045" y="232" fill="#9fb3c8" font-family="Arial, Helvetica, sans-serif" font-size="13">chosen per task</text>
+<rect x="1240" y="190" width="165" height="58" rx="14" fill="#14324a" stroke="#7491ac" stroke-width="1.4"/>
+<text x="1260" y="212" fill="#f5f9ff" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold">WEB SERVICES</text>
+<text x="1260" y="232" fill="#9fb3c8" font-family="Arial, Helvetica, sans-serif" font-size="13">allowed integrations</text>
+<rect x="1025" y="300" width="380" height="58" rx="14" fill="#14324a" stroke="#7491ac" stroke-width="1.4"/>
+<text x="1045" y="322" fill="#f5f9ff" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold">PUBLIC WEB &amp; REMOTE PEERS</text>
+<text x="1045" y="342" fill="#9fb3c8" font-family="Arial, Helvetica, sans-serif" font-size="13">reachable — never trusted by default</text>
+
+<!-- results and lessons come home -->
+<path d="M1060 450V486H160V470" fill="none" stroke="#b08cff" stroke-width="2" stroke-dasharray="9 8" marker-end="url(#violetArrow)"/>
+<text x="610" y="478" text-anchor="middle" fill="#cdbdff" font-family="Arial, Helvetica, sans-serif" font-size="13">results &amp; lessons come home</text>
+
+<!-- guard band -->
+<g transform="translate(300,0)">
+<rect x="40" y="505" width="820" height="64" rx="16" fill="#101b34" fill-opacity=".95" stroke="#45a2ff" stroke-width="2"/>
+<path d="M72 522l10 4v6c0 6 -4.5 9.5 -10 12c-5.5 -2.5 -10 -6 -10 -12v-6z" fill="none" stroke="#45a2ff" stroke-width="3" stroke-linejoin="round"/>
+<text x="95" y="532" fill="#d6e6ff" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="bold" letter-spacing="1">SECURITY RUNS ACROSS EVERY SURFACE</text>
+<text x="95" y="552" fill="#93b6ea" font-family="Arial, Helvetica, sans-serif" font-size="15">audit-first probes before change · loopback by default · unfixed findings never published</text>
+<path d="M120 505V484 M290 505V484 M460 505V484 M630 505V484 M790 505V484" fill="none" stroke="#45a2ff" stroke-opacity=".6" stroke-width="2"/>
+</g>
+
+<!-- legend -->
+<rect x="60" y="610" width="18" height="18" rx="5" fill="#0f493f" stroke="#56e7af" stroke-width="1.5"/><text x="88" y="624" fill="#dce8f5" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold">USERS DECIDE</text><text x="88" y="642" fill="#9fb3c8" font-family="Arial, Helvetica, sans-serif" font-size="14">egress · release · every opt-in</text>
+<rect x="420" y="610" width="18" height="18" rx="5" fill="#14324a" stroke="#4de8f5" stroke-width="1.5"/><text x="448" y="624" fill="#dce8f5" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold">LOCAL FLOWS STAY LOCAL</text><text x="448" y="642" fill="#9fb3c8" font-family="Arial, Helvetica, sans-serif" font-size="14">data &amp; workloads live on owner hardware</text>
+<path d="M780 619h22" fill="none" stroke="#b08cff" stroke-width="3" stroke-dasharray="9 8"/><text x="814" y="624" fill="#dce8f5" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold">OPT-IN EGRESS ONLY</text><text x="808" y="642" fill="#9fb3c8" font-family="Arial, Helvetica, sans-serif" font-size="14">authenticated gateways — never raw ports</text>
+<rect x="1140" y="610" width="18" height="18" rx="5" fill="#0f1c36" stroke="#45a2ff" stroke-width="1.5"/><text x="1168" y="624" fill="#dce8f5" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold">SECURITY BY DEFAULT</text><text x="1168" y="642" fill="#9fb3c8" font-family="Arial, Helvetica, sans-serif" font-size="14">audit-first · loopback · runbooked fixes</text>
+
+<!-- narrative animation overlays: one spotlight, one streak at a time -->
+<rect x="70" y="100" width="660" height="350" rx="30" fill="none" stroke="#7ceeff" stroke-width="5" class="fx kDome"/>
+<rect x="95" y="252" width="610" height="96" rx="16" fill="none" stroke="#cbb0ff" stroke-width="4" class="fx kLanes"/>
+<path d="M265 312H300" stroke="#b6f7ff" stroke-width="4" stroke-dasharray="16 36" class="fx cm kPkt"/>
+<rect x="710" y="182" width="120" height="146" rx="16" fill="none" stroke="#7dffd2" stroke-width="4" class="fx kGate"/>
+<path d="M812 255H985" stroke="#d7bbff" stroke-width="4" stroke-dasharray="20 170" class="fx cm kEg"/>
+<rect x="1015" y="180" width="205" height="78" rx="16" fill="none" stroke="#7ceeff" stroke-width="4" class="fx kCloud"/>
+<path d="M1060 450V486H160V470" stroke="#d7bbff" stroke-width="4" stroke-dasharray="26 1000" class="fx cm kRet"/>
+<rect x="390" y="386" width="325" height="74" rx="18" fill="none" stroke="#cbb0ff" stroke-width="3.5" class="fx kHome"/>
+</svg>

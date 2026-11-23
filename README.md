@@ -20,6 +20,10 @@ I bring full stack development, automation, AI, and infrastructure together into
 
 Self-hosted bench on my own hardware. Local-first: workloads and data stay on the machine unless I explicitly decide otherwise. Services are loopback-only by default; anything that must be reached remotely goes through an authenticated gateway, never a raw port. Agents propose, the user approves — no agent change ships without passing the gate.
 
+<div align="center">
+  <img src="assets/lab-system-map.svg" alt="Static-complete LAB cross-section: inside the local-only boundary a self-hosted workstation runs automation, generation, and local-model services with agent lanes; data and work stay on owner hardware; a user gate on the boundary holds all egress, which crosses only through an authenticated gateway; results and lessons come home; a guard-blue security band runs beneath everything. Animation is decorative; the diagram is complete without it." width="100%" />
+</div>
+
 - **Audit-first.** Every change starts read-only: inventory, probe, understand — then act.
 - **Hunt your own leaks.** A recent audit caught a local service bound to all interfaces with no auth. Remediated to loopback-only, documented, runbooked.
 - **Post-fix runbooks.** If it surprised me once, it's written down so it can't surprise me twice.
