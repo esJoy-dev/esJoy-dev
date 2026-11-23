@@ -7,6 +7,7 @@
  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#28516b" stop-opacity=".76"/><stop offset=".48" stop-color="#1a314b" stop-opacity=".78"/><stop offset="1" stop-color="#262b53" stop-opacity=".86"/></linearGradient>
  <marker id="cyanArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L10 5L0 10Z" fill="#4de8f5"/></marker>
  <marker id="violetArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L10 5L0 10Z" fill="#b08cff"/></marker>
+ <marker id="mintArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L10 5L0 10Z" fill="#56e7af"/></marker>
  <style>
   .fx{opacity:0;animation-duration:16s;animation-iteration-count:infinite;animation-timing-function:ease-in-out}
   .cm{fill:none;stroke-linecap:round;animation-timing-function:linear}
@@ -110,8 +111,8 @@
 <text x="1045" y="342" fill="#9fb3c8" font-family="Arial, Helvetica, sans-serif" font-size="13">reachable — never trusted by default</text>
 
 <!-- results and lessons come home -->
-<path d="M1060 450V486H160V470" fill="none" stroke="#b08cff" stroke-width="2" stroke-dasharray="9 8" marker-end="url(#violetArrow)"/>
-<text x="610" y="478" text-anchor="middle" fill="#cdbdff" font-family="Arial, Helvetica, sans-serif" font-size="13">results &amp; lessons come home</text>
+<path d="M1060 450V486H160V470" fill="none" stroke="#56e7af" stroke-width="2" stroke-dasharray="9 8" marker-end="url(#mintArrow)"/>
+<text x="610" y="478" text-anchor="middle" fill="#b8ffe1" font-family="Arial, Helvetica, sans-serif" font-size="13">results &amp; lessons come home</text>
 
 <!-- guard band -->
 <g transform="translate(300,0)">
@@ -123,10 +124,11 @@
 </g>
 
 <!-- legend -->
-<rect x="60" y="610" width="18" height="18" rx="5" fill="#0f493f" stroke="#56e7af" stroke-width="1.5"/><text x="88" y="624" fill="#dce8f5" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold">USERS DECIDE</text><text x="88" y="642" fill="#9fb3c8" font-family="Arial, Helvetica, sans-serif" font-size="14">egress · release · every opt-in</text>
-<rect x="420" y="610" width="18" height="18" rx="5" fill="#14324a" stroke="#4de8f5" stroke-width="1.5"/><text x="448" y="624" fill="#dce8f5" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold">LOCAL FLOWS STAY LOCAL</text><text x="448" y="642" fill="#9fb3c8" font-family="Arial, Helvetica, sans-serif" font-size="14">data &amp; workloads live on owner hardware</text>
-<path d="M780 619h22" fill="none" stroke="#b08cff" stroke-width="3" stroke-dasharray="9 8"/><text x="814" y="624" fill="#dce8f5" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold">OPT-IN EGRESS ONLY</text><text x="808" y="642" fill="#9fb3c8" font-family="Arial, Helvetica, sans-serif" font-size="14">authenticated gateways — never raw ports</text>
-<rect x="1140" y="610" width="18" height="18" rx="5" fill="#0f1c36" stroke="#45a2ff" stroke-width="1.5"/><text x="1168" y="624" fill="#dce8f5" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold">SECURITY BY DEFAULT</text><text x="1168" y="642" fill="#9fb3c8" font-family="Arial, Helvetica, sans-serif" font-size="14">audit-first · loopback · runbooked fixes</text>
+<rect x="60" y="610" width="18" height="18" rx="5" fill="#0f493f" stroke="#56e7af" stroke-width="1.5"/><text x="88" y="624" fill="#dce8f5" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold">USERS DECIDE</text><text x="88" y="642" fill="#9fb3c8" font-family="Arial, Helvetica, sans-serif" font-size="14">egress · release · opt-in</text>
+<rect x="290" y="610" width="18" height="18" rx="5" fill="#14324a" stroke="#4de8f5" stroke-width="1.5"/><text x="318" y="624" fill="#dce8f5" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold">LOCAL FLOWS</text><text x="318" y="642" fill="#9fb3c8" font-family="Arial, Helvetica, sans-serif" font-size="14">stay on owner hardware</text>
+<path d="M500 619h22" fill="none" stroke="#b08cff" stroke-width="3" stroke-dasharray="9 8"/><text x="534" y="624" fill="#dce8f5" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold">EGRESS OUT</text><text x="534" y="642" fill="#9fb3c8" font-family="Arial, Helvetica, sans-serif" font-size="14">authenticated gateways only</text>
+<path d="M750 619h22" fill="none" stroke="#56e7af" stroke-width="3" stroke-dasharray="9 8"/><text x="784" y="624" fill="#dce8f5" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold">RESULTS RETURN</text><text x="784" y="642" fill="#9fb3c8" font-family="Arial, Helvetica, sans-serif" font-size="14">lessons come home</text>
+<rect x="930" y="610" width="18" height="18" rx="5" fill="#0f1c36" stroke="#45a2ff" stroke-width="1.5"/><text x="958" y="624" fill="#dce8f5" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold">SECURITY</text><text x="958" y="642" fill="#9fb3c8" font-family="Arial, Helvetica, sans-serif" font-size="14">audit-first · loopback</text>
 
 <!-- narrative animation overlays: one spotlight, one streak at a time -->
 <rect x="70" y="100" width="660" height="350" rx="30" fill="none" stroke="#7ceeff" stroke-width="5" class="fx kDome"/>
@@ -135,6 +137,6 @@
 <rect x="710" y="182" width="120" height="146" rx="16" fill="none" stroke="#7dffd2" stroke-width="4" class="fx kGate"/>
 <path d="M812 255H985" stroke="#d7bbff" stroke-width="4" stroke-dasharray="20 170" class="fx cm kEg"/>
 <rect x="1015" y="180" width="205" height="78" rx="16" fill="none" stroke="#7ceeff" stroke-width="4" class="fx kCloud"/>
-<path d="M1060 450V486H160V470" stroke="#d7bbff" stroke-width="4" stroke-dasharray="26 1000" class="fx cm kRet"/>
+<path d="M1060 450V486H160V470" stroke="#7dffd2" stroke-width="4" stroke-dasharray="26 1000" class="fx cm kRet"/>
 <rect x="390" y="386" width="325" height="74" rx="18" fill="none" stroke="#cbb0ff" stroke-width="3.5" class="fx kHome"/>
 </svg>
