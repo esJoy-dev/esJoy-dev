@@ -74,7 +74,7 @@
 <text x="585" y="326" text-anchor="middle" fill="#cdbdff" font-family="Arial, Helvetica, sans-serif" font-size="13">the user approves</text>
 
 <!-- lanes feed data and runbooks -->
-<path d="M400 368V396" fill="none" stroke="#4de8f5" stroke-width="2.5" marker-end="url(#cyanArrow)"/>
+<path d="M235 368V396" fill="none" stroke="#4de8f5" stroke-width="2.5" marker-end="url(#cyanArrow)"/>
 <path d="M560 368V396" fill="none" stroke="#4de8f5" stroke-width="2.5" marker-end="url(#cyanArrow)"/>
 <rect x="95" y="396" width="280" height="48" rx="14" fill="#14324a" stroke="#56e7af" stroke-width="1.6"/>
 <text x="115" y="414" fill="#f5f9ff" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold">DATA &amp; WORK</text>
@@ -84,9 +84,9 @@
 <text x="420" y="434" fill="#9fb3c8" font-family="Arial, Helvetica, sans-serif" font-size="13">lessons recorded — never live endpoints</text>
 
 <!-- user gate on the boundary -->
+<path d="M770 213L812 255 770 297 728 255Z" fill="#0f3b34" stroke="#56e7af" stroke-width="2"/>
 <g class="fx kDeny"><circle cx="770" cy="205" r="12.5" fill="#6e3f11" stroke="#ffb454" stroke-width="2.5"/><path d="M764.5 199.5l11 11 M775.5 199.5l-11 11" fill="none" stroke="#ffdcae" stroke-width="2.8" stroke-linecap="round"/></g>
 <g class="fx kOk"><circle cx="770" cy="205" r="12.5" fill="#0f4d35" stroke="#56e7af" stroke-width="2.5"/><path d="M763.5 205l4.5 5 8.5 -9.5" fill="none" stroke="#b8ffe1" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></g>
-<path d="M770 213L812 255 770 297 728 255Z" fill="#0f3b34" stroke="#56e7af" stroke-width="2"/>
 <text x="770" y="250" text-anchor="middle" fill="#b8ffe1" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" letter-spacing="1">USER</text>
 <text x="770" y="268" text-anchor="middle" fill="#b8ffe1" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" letter-spacing="1">GATE</text>
 <text x="770" y="318" text-anchor="middle" fill="#d7e5f2" font-family="Arial, Helvetica, sans-serif" font-size="13">egress waits here</text>
