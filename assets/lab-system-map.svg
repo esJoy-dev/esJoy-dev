@@ -134,7 +134,7 @@
 
 <!-- narrative animation overlays: one spotlight, one streak at a time -->
 <rect x="70" y="100" width="660" height="350" rx="30" fill="none" stroke="#7ceeff" stroke-width="5" class="fx kDome"/>
-<rect x="95" y="252" width="610" height="96" rx="16" fill="none" stroke="#cbb0ff" stroke-width="4" class="fx kLanes"/>
+<rect x="95" y="252" width="610" height="116" rx="16" fill="none" stroke="#cbb0ff" stroke-width="4" class="fx kLanes"/>
 <path d="M265 312H300" stroke="#b6f7ff" stroke-width="4" stroke-dasharray="16 36" class="fx cm kPkt"/>
 <rect x="710" y="182" width="120" height="146" rx="16" fill="none" stroke="#7dffd2" stroke-width="4" class="fx kGate"/>
 <path d="M812 255H985" stroke="#d7bbff" stroke-width="4" stroke-dasharray="20 170" class="fx cm kEg"/>
