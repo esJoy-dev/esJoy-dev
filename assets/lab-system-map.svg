@@ -112,8 +112,7 @@
 
 <!-- results and lessons come home -->
 <path d="M1060 450V487H160V470" fill="none" stroke="#56e7af" stroke-width="2" stroke-dasharray="9 8" marker-end="url(#mintArrow)"/>
-<rect x="512" y="476" width="196" height="22" rx="11" fill="#0e2136" stroke="#56e7af" stroke-opacity=".5" stroke-width="1"/>
-<text x="610" y="491" text-anchor="middle" fill="#b8ffe1" font-family="Arial, Helvetica, sans-serif" font-size="13">results &amp; lessons come home</text>
+
 
 <!-- guard band -->
 <g transform="translate(300,0)">
@@ -123,6 +122,8 @@
 <text x="95" y="552" fill="#93b6ea" font-family="Arial, Helvetica, sans-serif" font-size="15">audit-first probes before change · loopback by default · unfixed findings never published</text>
 <path d="M120 505V494 M290 505V494 M460 505V494 M630 505V494 M790 505V494" fill="none" stroke="#45a2ff" stroke-opacity=".6" stroke-width="2"/>
 </g>
+<rect x="512" y="476" width="196" height="22" rx="11" fill="#0e2136" stroke="#56e7af" stroke-opacity=".5" stroke-width="1"/>
+<text x="610" y="491" text-anchor="middle" fill="#b8ffe1" font-family="Arial, Helvetica, sans-serif" font-size="13">results &amp; lessons come home</text>
 
 <!-- legend -->
 <rect x="60" y="610" width="18" height="18" rx="5" fill="#0f493f" stroke="#56e7af" stroke-width="1.5"/><text x="88" y="624" fill="#dce8f5" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold">USERS DECIDE</text><text x="88" y="642" fill="#9fb3c8" font-family="Arial, Helvetica, sans-serif" font-size="14">egress · release · opt-in</text>
