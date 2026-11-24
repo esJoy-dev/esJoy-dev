@@ -14,7 +14,7 @@ I bring full stack development, automation, AI, and infrastructure together into
 
 ## 🧪 The LAB
 
-Self-hosted bench on my own hardware. Workloads and data stay on the machine unless I explicitly decide otherwise and when the work calls for cloud models, they run through the same gated, authenticated paths. Cloud is part of my daily work and the bench is the foundation, not a purity contest. Services are loopback-only by default; anything that must be reached remotely goes through an authenticated gateway, never a raw port. Agents propose, the user reviews, refines, and approves — nothing ships without passing the gate.
+Self-hosted bench on my own hardware. Workloads and data stay on the machine unless I explicitly decide otherwise and when the work calls for cloud models, they run through the same gated, authenticated paths. Cloud is part of my daily work and the bench is the foundation, not a purity contest. Services are loopback-only by default; anything that must be reached remotely goes through an authenticated gateway, never a raw port. Agents propose, the user reviews, refines, and approves. Nothing ships without passing the gate.
 
 <div align="center">
   <img src="assets/lab-system-map.svg" alt="Static-complete LAB cross-section: inside the local-only boundary a self-hosted workstation runs automation, generation, and local-model services with agent lanes; data and work stay on owner hardware; a user gate just below the boundary holds all egress, which crosses only through an authenticated gateway; results and lessons come home; a guard-blue security band runs beneath everything. Animation is decorative; the diagram is complete without it." width="100%" />
