@@ -45,11 +45,8 @@ _The tools and environments I use are not a claim of equal expertise in each. Te
 Every agent change moves through this loop: agents iterate, the user's gate decides, and only approved work ships. Security runs across every phase.
 
 ## 🌱 The Dome Connection
-<div align="center">
-  <img src="assets/banner.webp" alt="A neon-lit monkey operator works at a floating status panel with a network node icon beside it; a glowing data pipeline runs across a world map toward a glass dome on the right that holds a luminous tree with circuit roots, two server racks, orbiting hexagonal tech icons, and a padlock shield at the base." width="100%" />
-</div>
 
-[Dome](https://neodome.app) is a framework I'm developing around interconnected, autonomous digital ecosystems: local agents, self-hosted infrastructure, and workflows that stay under the user's control. The Tree represents growth and adaptation; its roots connect the ecosystem's components while keeping the system understandable. Dome is one expression of my engineering philosophy, not the limit of what I design. → **[Visit Dome](https://neodome.app)**
+[Dome](https://neodome.app) is a framework I'm developing around interconnected, autonomous digital ecosystems: local agents, self-hosted infrastructure, and workflows that stay under the user's control. Growth and adaptation; its roots connect the ecosystem's components while keeping the system understandable. Dome is one expression of my engineering philosophy, not the limit of what I design. → **[Visit Dome](https://neodome.app)**
 
 ## 🤝 Let's Connect
 
