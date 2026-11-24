@@ -73,7 +73,7 @@
 <text x="75" y="234" fill="#f5f9ff" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="bold">EXPLORE &amp; ARCHITECT</text>
 <text x="75" y="264" fill="#d7e5f2" font-family="Arial, Helvetica, sans-serif" font-size="22">Set direction: the problem,</text>
 <text x="75" y="290" fill="#d7e5f2" font-family="Arial, Helvetica, sans-serif" font-size="22">constraints, and system design.</text>
-<path d="M385 230H453" fill="none" stroke="#4de8f5" stroke-width="3" marker-end="url(#cyanArrow)"/>
+<path d="M417 230H453" fill="none" stroke="#4de8f5" stroke-width="3" marker-end="url(#cyanArrow)"/>
 <path d="M965 230H1033" fill="none" stroke="#4de8f5" stroke-width="3" marker-end="url(#cyanArrow)"/>
 <path d="M1105 130L1205 230 1105 330 1005 230Z" fill="#ffb454" class="fx kGA"/>
 <path d="M1105 130L1205 230 1105 330 1005 230Z" fill="#56e7af" class="fx kGG"/>

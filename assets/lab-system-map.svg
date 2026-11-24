@@ -23,7 +23,7 @@
   @keyframes kOk{0%,53%{opacity:0}53.7%{opacity:1}60%{opacity:1}61%,100%{opacity:0}}
   @keyframes kEg{0%,56.5%{opacity:0;stroke-dashoffset:12}57.2%{opacity:1}60.5%{opacity:1}61.3%,100%{opacity:0;stroke-dashoffset:-18}}
   @keyframes kCloud{0%,56%{opacity:0}57%{opacity:.85}63%{opacity:.85}64%,100%{opacity:0}}
-  @keyframes kRet{0%,70%{opacity:0;stroke-dashoffset:26}71%{opacity:1}77%{opacity:1}78%,100%{opacity:0;stroke-dashoffset:-483}}
+  @keyframes kRet{0%,70%{opacity:0;stroke-dashoffset:26}71%{opacity:1}77%{opacity:1}78%,100%{opacity:0;stroke-dashoffset:-457}}
   @keyframes kHome{0%,78%{opacity:0}79%{opacity:.75}84%{opacity:.75}85%,100%{opacity:0}}
   @keyframes breathe{0%,100%{opacity:.55}50%{opacity:1}}
   .breathe{animation:breathe 4s ease-in-out infinite}
