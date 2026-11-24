@@ -1,7 +1,3 @@
-<div align="center">
-  <img src="assets/banner.webp" alt="A neon-lit monkey operator works at a floating status panel with a network node icon beside it; a glowing data pipeline runs across a world map toward a glass dome on the right that holds a luminous tree with circuit roots, two server racks, orbiting hexagonal tech icons, and a padlock shield at the base." width="100%" />
-</div>
-
 # 👋 Hello, I'm esJoy
 
 > I design and build agent systems that keep the user in charge.
@@ -16,15 +12,15 @@ I bring full stack development, automation, AI, and infrastructure together into
 - **Stay adaptable.** Avoid unnecessary dependence on one model, platform, or provider.
 - **Keep exploring.** Experimentation is part of the engineering process.
 
-## 🧪 The LAB — where this runs for real
+## 🧪 The LAB
 
-Self-hosted bench on my own hardware. Local-first: workloads and data stay on the machine unless I explicitly decide otherwise — and when the work calls for cloud models, they run through the same gated, authenticated paths. Cloud is part of my daily work; the bench is the foundation, not a purity contest. Services are loopback-only by default; anything that must be reached remotely goes through an authenticated gateway, never a raw port. Agents propose, the user approves — no agent change ships without passing the gate.
+Self hosted bench on my own hardware. Workloads and data stay on the machine unless I explicitly decide otherwise and when the work calls for cloud models, they run through the same gated, authenticated paths. Cloud is part of my daily work and the bench is the foundation, not a purity contest. Services are loopback-only by default; anything that must be reached remotely goes through an authenticated gateway, never a raw port. Agents propose, the user reviews, refines and approves passing the gate.
 
 <div align="center">
   <img src="assets/lab-system-map.svg" alt="Static-complete LAB cross-section: inside the local-only boundary a self-hosted workstation runs automation, generation, and local-model services with agent lanes; data and work stay on owner hardware; a user gate just below the boundary holds all egress, which crosses only through an authenticated gateway; results and lessons come home; a guard-blue security band runs beneath everything. Animation is decorative; the diagram is complete without it." width="100%" />
 </div>
 
-- **Audit-first.** Every change starts read-only: inventory, probe, understand — then act.
+- **Audit first.** Every change starts read-only: inventory, probe, understand then act.
 - **Hunt your own leaks.** A recent audit caught a local service bound to all interfaces with no auth. Remediated to loopback-only, documented, runbooked.
 - **Post-fix runbooks.** If it surprised me once, it's written down so it can't surprise me twice.
 
@@ -32,11 +28,11 @@ _The LAB is shared at concept level on purpose: methods and lessons, never live 
 
 ## 🛠️ Focus Areas & Stack
 
-| Area | What it means | With |
+| Area | What it means | Tools |
 | --- | --- | --- |
 | **Automation Systems** | Connecting workflows and reducing repetitive operations. | n8n · ComfyUI |
-| **AI Integration & Agents** | Model orchestration, tool integrations, practical AI workflows. | Gentle AI · Gentle Shell · Engram · llama.cpp · Cloud models · MCP |
-| **Infrastructure & Self-Hosting** | Local environments, containers, cloud services, connected systems. | Linux & Windows · Docker · Cloudflare · Supabase (PostgreSQL) · other databases in progress |
+| **AI Integration & Agents** | Model orchestration, tool integrations, practical AI workflows. | [Gentle Stack](https://gentlemanprogramming.com/gentle-shell/) · llama.cpp · Cloud models · MCP |
+| **Infrastructure & Self-Hosting** | Local environments, containers, cloud services, connected systems. | Linux & other OS · Docker · Cloudflare · Supabase (PostgreSQL) · other databases in progress |
 
 _The tools and environments I use are not a claim of equal expertise in each. Terminal-first workflows._
 
@@ -46,9 +42,12 @@ _The tools and environments I use are not a claim of equal expertise in each. Te
   <img src="assets/engineering-workflow.svg" alt="Animated engineering loop: the user sets direction in Explore and Architect; agents iterate an Implement-Verify delivery loop; the user approval gate declines work once, then approves on the second pass; Release powers on only after approval and feeds an operate-and-learn arc back into direction. Security runs across every phase. Animation is decorative; the static diagram is complete on its own." width="100%" />
 </div>
 
-Every agent change moves through this loop: agents iterate, the user's gate decides, and only approved work ships. Security runs across every phase — the guard band under the loop is the same one that stamps the release.
+Every agent change moves through this loop: agents iterate, the user's gate decides, and only approved work ships. Security runs across every phase.
 
 ## 🌱 The Dome Connection
+<div align="center">
+  <img src="assets/banner.webp" alt="A neon-lit monkey operator works at a floating status panel with a network node icon beside it; a glowing data pipeline runs across a world map toward a glass dome on the right that holds a luminous tree with circuit roots, two server racks, orbiting hexagonal tech icons, and a padlock shield at the base." width="100%" />
+</div>
 
 [Dome](https://neodome.app) is a framework I'm developing around interconnected, autonomous digital ecosystems: local agents, self-hosted infrastructure, and workflows that stay under the user's control. The Tree represents growth and adaptation; its roots connect the ecosystem's components while keeping the system understandable. Dome is one expression of my engineering philosophy, not the limit of what I design. → **[Visit Dome](https://neodome.app)**
 
