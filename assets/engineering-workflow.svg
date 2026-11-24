@@ -83,19 +83,19 @@
 <text x="1105" y="244" text-anchor="middle" fill="#b8ffe1" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" letter-spacing="1">APPROVAL</text>
 <g class="fx kGAh"><circle cx="1105" cy="126" r="12.5" fill="#6e3f11" stroke="#ffb454" stroke-width="2.5"/><path d="M1099.5 120.5l11 11 M1110.5 120.5l-11 11" fill="none" stroke="#ffdcae" stroke-width="2.8" stroke-linecap="round"/></g>
 <g class="fx kGGh"><circle cx="1105" cy="126" r="12.5" fill="#0f4d35" stroke="#56e7af" stroke-width="2.5"/><path d="M1098.5 126l4.5 5 8.5 -9.5" fill="none" stroke="#b8ffe1" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></g>
-<rect x="1250" y="130" width="195" height="200" rx="20" fill="#17293f" stroke="#7491ac" stroke-width="1.8"/>
-<rect x="1250" y="130" width="195" height="200" rx="20" fill="url(#mintglass)" stroke="#56e7af" stroke-width="1.8" class="fx kRelS"/>
+<rect x="1265" y="130" width="195" height="200" rx="20" fill="#17293f" stroke="#7491ac" stroke-width="1.8"/>
+<rect x="1265" y="130" width="195" height="200" rx="20" fill="url(#mintglass)" stroke="#56e7af" stroke-width="1.8" class="fx kRelS"/>
 <path d="M1268 132h120" stroke="#d9f9ff" stroke-opacity=".4" stroke-width="2"/>
-<rect x="1268" y="150" width="100" height="26" rx="13" fill="#0f493f" stroke="#56e7af" stroke-width="1.4"/><text x="1318" y="167" text-anchor="middle" fill="#b8ffe1" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" letter-spacing="1">USER-LED</text>
+<rect x="1283" y="150" width="100" height="26" rx="13" fill="#0f493f" stroke="#56e7af" stroke-width="1.4"/><text x="1333" y="167" text-anchor="middle" fill="#b8ffe1" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" letter-spacing="1">USER-LED</text>
 <g class="kRocketP" fill="none" stroke="#7d96ae" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1398 160c-8 8 -11 19 -11 27v10h22v-10c0 -8 -3 -19 -11 -27z"/><circle cx="1398" cy="182" r="5"/><path d="M1387 185l-9 11h9 M1409 185l9 11h-9"/><path d="M1395 197c1 3 2 6 3 8 1 -2 2 -5 3 -8"/></g>
 <g class="fx kRelS" fill="none" stroke="#75efbd" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1398 160c-8 8 -11 19 -11 27v10h22v-10c0 -8 -3 -19 -11 -27z"/><circle cx="1398" cy="182" r="5"/><path d="M1387 185l-9 11h9 M1409 185l9 11h-9"/><path d="M1395 197c1 3 2 6 3 8 1 -2 2 -5 3 -8"/></g>
-<text x="1268" y="234" fill="#f5f9ff" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="bold">RELEASE</text>
-<text x="1268" y="264" fill="#d7e5f2" font-family="Arial, Helvetica, sans-serif" font-size="21">Ship deliberately:</text>
-<text x="1268" y="288" fill="#d7e5f2" font-family="Arial, Helvetica, sans-serif" font-size="21">the user decides</text>
-<text x="1268" y="312" fill="#d7e5f2" font-family="Arial, Helvetica, sans-serif" font-size="21">every go-live.</text>
-<g class="fx kRelH"><circle cx="1437" cy="137" r="12.5" fill="#0f1c36" stroke="#45a2ff" stroke-width="2.5"/><path d="M1431 137.5l4 4.5 8.5 -9" fill="none" stroke="#cfe1ff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></g>
-<path d="M1183 230H1244" fill="none" stroke="#4de8f5" stroke-width="3" marker-end="url(#cyanArrow)"/>
-<text x="1217" y="222" text-anchor="middle" fill="#b8ffe1" font-family="Arial, Helvetica, sans-serif" font-size="13">approved</text>
+<text x="1283" y="234" fill="#f5f9ff" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="bold">RELEASE</text>
+<text x="1283" y="264" fill="#d7e5f2" font-family="Arial, Helvetica, sans-serif" font-size="21">Ship deliberately:</text>
+<text x="1283" y="288" fill="#d7e5f2" font-family="Arial, Helvetica, sans-serif" font-size="21">the user decides</text>
+<text x="1283" y="312" fill="#d7e5f2" font-family="Arial, Helvetica, sans-serif" font-size="21">every go-live.</text>
+<g class="fx kRelH"><circle cx="1452" cy="137" r="12.5" fill="#0f1c36" stroke="#45a2ff" stroke-width="2.5"/><path d="M1446 137.5l4 4.5 8.5 -9" fill="none" stroke="#cfe1ff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></g>
+<path d="M1183 230H1259" fill="none" stroke="#4de8f5" stroke-width="3" marker-end="url(#cyanArrow)"/>
+<text x="1224" y="222" text-anchor="middle" fill="#b8ffe1" font-family="Arial, Helvetica, sans-serif" font-size="15">approved</text>
 <path d="M1105 308V375A10 10 0 0 1 1095 385H722A10 10 0 0 1 712 375V362" fill="none" stroke="#b08cff" stroke-width="2.5" stroke-dasharray="9 8" marker-end="url(#violetArrow)"/>
 <text x="905" y="404" text-anchor="middle" fill="#cdbdff" font-family="Arial, Helvetica, sans-serif" font-size="17">REWORK — decline sends it back</text>
 <path d="M1347 330V452A20 20 0 0 1 1327 472H120A20 20 0 0 1 100 452V332" fill="none" stroke="#b08cff" stroke-width="2.5" stroke-dasharray="9 8" marker-end="url(#violetArrow)"/>
@@ -115,12 +115,12 @@
 <rect x="55" y="130" width="330" height="200" rx="20" fill="none" stroke="#7dffd2" stroke-width="5" class="fx kBox"/>
 <rect x="485" y="165" width="205" height="165" rx="16" fill="none" stroke="#7ceeff" stroke-width="5" class="fx kImpl"/>
 <rect x="745" y="165" width="205" height="165" rx="16" fill="none" stroke="#7ceeff" stroke-width="5" class="fx kVer"/>
-<rect x="1250" y="130" width="195" height="200" rx="20" fill="none" stroke="#7dffd2" stroke-width="5" class="fx kRel"/>
+<rect x="1265" y="130" width="195" height="200" rx="20" fill="none" stroke="#7dffd2" stroke-width="5" class="fx kRel"/>
 <rect x="455" y="100" width="510" height="260" rx="26" fill="none" stroke="#cbb0ff" stroke-width="4" class="fx kCont"/>
 <path d="M387 230H452" stroke="#b6f7ff" stroke-width="4" stroke-dasharray="20 120" class="fx cm kA"/>
 <path d="M692 208H741" stroke="#b6f7ff" stroke-width="3.5" stroke-dasharray="16 100" class="fx cm kB"/>
 <path d="M967 230H1019" stroke="#b6f7ff" stroke-width="4" stroke-dasharray="20 120" class="fx cm kC"/>
 <path d="M1105 308V375A10 10 0 0 1 1095 385H722A10 10 0 0 1 712 375V362" stroke="#ffc873" stroke-width="4" stroke-dasharray="26 540" class="fx cm kRW"/>
-<path d="M1189 230H1246" stroke="#b6f7ff" stroke-width="4" stroke-dasharray="20 120" class="fx cm kD"/>
-<path d="M1345 332V452A20 20 0 0 1 1327 472H120A20 20 0 0 1 100 452V334" stroke="#d7bbff" stroke-width="4" stroke-dasharray="34 1580" class="fx cm kL"/>
+<path d="M1189 230H1261" stroke="#b6f7ff" stroke-width="4" stroke-dasharray="20 120" class="fx cm kD"/>
+<path d="M1360 332V452A20 20 0 0 1 1342 472H120A20 20 0 0 1 100 452V334" stroke="#d7bbff" stroke-width="4" stroke-dasharray="34 1580" class="fx cm kL"/>
 </svg>

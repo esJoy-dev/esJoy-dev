@@ -95,14 +95,15 @@
 <g class="fx kOk"><circle cx="495" cy="625" r="12.5" fill="#0f4d35" stroke="#56e7af" stroke-width="2.5"/><path d="M488.5 625l4.5 5 8.5 -9.5" fill="none" stroke="#b8ffe1" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></g>
 <text x="400" y="619" text-anchor="middle" fill="#b8ffe1" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" letter-spacing="1">USER</text>
 <text x="400" y="637" text-anchor="middle" fill="#b8ffe1" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" letter-spacing="1">GATE</text>
-<g class="fx kDec"><path d="M340 625H200V552" fill="none" stroke="#ffb454" stroke-width="2.5" stroke-dasharray="7 6" marker-end="url(#amberArrow)"/><text x="270" y="590" text-anchor="middle" fill="#ffdcae" font-family="Arial, Helvetica, sans-serif" font-size="15">declined — rework inside</text></g>
+<path d="M340 625H200V552" fill="none" stroke="#ffb454" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#amberArrow)" opacity=".55"/>
+<text x="270" y="590" text-anchor="middle" fill="#ffdcae" font-family="Arial, Helvetica, sans-serif" font-size="15" opacity=".8">declined — rework inside</text>
 <text x="620" y="630" text-anchor="middle" fill="#d7e5f2" font-family="Arial, Helvetica, sans-serif" font-size="17">egress waits here</text>
 <text x="530" y="707" text-anchor="middle" fill="#cdbdff" font-family="Arial, Helvetica, sans-serif" font-size="17">authenticated gateway</text>
 
 <!-- outside zone: cloud is daily and gated, web is opt-in -->
 <rect x="255" y="715" width="475" height="205" rx="24" fill="#17293f" stroke="#7491ac" stroke-width="1.8"/>
 <text x="280" y="750" fill="#f5f9ff" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" letter-spacing="1">OUTSIDE — CLOUD &amp; WEB</text>
-<rect x="715" y="728" width="90" height="26" rx="13" fill="#1c2344" stroke="#ffb454" stroke-width="1.3"/><text x="760" y="746" text-anchor="middle" fill="#ffdcae" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" letter-spacing="1">DAILY</text>
+<rect x="630" y="728" width="90" height="26" rx="13" fill="#1c2344" stroke="#ffb454" stroke-width="1.3"/><text x="675" y="746" text-anchor="middle" fill="#ffdcae" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" letter-spacing="1">DAILY</text>
 <text x="280" y="772" fill="#9fb3c8" font-family="Arial, Helvetica, sans-serif" font-size="17">in daily use — nothing crosses without approval</text>
 <rect x="280" y="790" width="205" height="58" rx="14" fill="#14324a" stroke="#56e7af" stroke-width="1.4"/>
 <text x="300" y="814" fill="#f5f9ff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold">CLOUD MODELS</text>
@@ -116,8 +117,6 @@
 
 <!-- results and lessons come home (up the left side) -->
 <path d="M255 830H140V544" fill="none" stroke="#56e7af" stroke-width="2" stroke-dasharray="9 8" marker-end="url(#mintArrow)"/>
-<rect x="13" y="677" width="254" height="26" rx="13" fill="#0e2136" stroke="#56e7af" stroke-opacity=".5" stroke-width="1"/>
-<text x="140" y="694" text-anchor="middle" fill="#b8ffe1" font-family="Arial, Helvetica, sans-serif" font-size="17">results &amp; lessons come home</text>
 
 <!-- guard band -->
 <rect x="40" y="935" width="1070" height="60" rx="16" fill="#101b34" fill-opacity=".95" stroke="#45a2ff" stroke-width="2"/>
@@ -143,4 +142,7 @@
 <rect x="270" y="780" width="460" height="78" rx="16" fill="none" stroke="#7ceeff" stroke-width="4" class="fx kCloud"/>
 <path d="M255 830H140V544" stroke="#7dffd2" stroke-width="4" stroke-dasharray="26 375" class="fx cm kRet"/>
 <rect x="6" y="671" width="268" height="38" rx="19" fill="none" stroke="#7dffd2" stroke-width="3.5" class="fx kHome"/>
+<path d="M340 625H200V552" stroke="#ffd28a" stroke-width="4" stroke-dasharray="16 201" class="fx cm kDec"/>
+<rect x="13" y="677" width="254" height="26" rx="13" fill="#0e2136" stroke="#56e7af" stroke-opacity=".5" stroke-width="1"/>
+<text x="140" y="694" text-anchor="middle" fill="#b8ffe1" font-family="Arial, Helvetica, sans-serif" font-size="17">results &amp; lessons come home</text>
 </svg>
