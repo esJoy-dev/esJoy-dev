@@ -87,8 +87,8 @@
 <rect x="1265" y="130" width="195" height="200" rx="20" fill="url(#mintglass)" stroke="#56e7af" stroke-width="1.8" class="fx kRelS"/>
 <path d="M1268 132h120" stroke="#d9f9ff" stroke-opacity=".4" stroke-width="2"/>
 <rect x="1283" y="150" width="100" height="26" rx="13" fill="#0f493f" stroke="#56e7af" stroke-width="1.4"/><text x="1333" y="167" text-anchor="middle" fill="#b8ffe1" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" letter-spacing="1">USER-LED</text>
-<g class="kRocketP" fill="none" stroke="#7d96ae" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1398 160c-8 8 -11 19 -11 27v10h22v-10c0 -8 -3 -19 -11 -27z"/><circle cx="1398" cy="182" r="5"/><path d="M1387 185l-9 11h9 M1409 185l9 11h-9"/><path d="M1395 197c1 3 2 6 3 8 1 -2 2 -5 3 -8"/></g>
-<g class="fx kRelS" fill="none" stroke="#75efbd" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1398 160c-8 8 -11 19 -11 27v10h22v-10c0 -8 -3 -19 -11 -27z"/><circle cx="1398" cy="182" r="5"/><path d="M1387 185l-9 11h9 M1409 185l9 11h-9"/><path d="M1395 197c1 3 2 6 3 8 1 -2 2 -5 3 -8"/></g>
+<g class="kRocketP" fill="none" stroke="#7d96ae" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1413 160c-8 8 -11 19 -11 27v10h22v-10c0 -8 -3 -19 -11 -27z"/><circle cx="1413" cy="182" r="5"/><path d="M1402 185l-9 11h9 M1424 185l9 11h-9"/><path d="M1410 197c1 3 2 6 3 8 1 -2 2 -5 3 -8"/></g>
+<g class="fx kRelS" fill="none" stroke="#75efbd" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1413 160c-8 8 -11 19 -11 27v10h22v-10c0 -8 -3 -19 -11 -27z"/><circle cx="1413" cy="182" r="5"/><path d="M1402 185l-9 11h9 M1424 185l9 11h-9"/><path d="M1410 197c1 3 2 6 3 8 1 -2 2 -5 3 -8"/></g>
 <text x="1283" y="234" fill="#f5f9ff" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="bold">RELEASE</text>
 <text x="1283" y="264" fill="#d7e5f2" font-family="Arial, Helvetica, sans-serif" font-size="21">Ship deliberately:</text>
 <text x="1283" y="288" fill="#d7e5f2" font-family="Arial, Helvetica, sans-serif" font-size="21">the user decides</text>
@@ -98,7 +98,7 @@
 <text x="1224" y="222" text-anchor="middle" fill="#b8ffe1" font-family="Arial, Helvetica, sans-serif" font-size="15">approved</text>
 <path d="M1105 308V375A10 10 0 0 1 1095 385H722A10 10 0 0 1 712 375V362" fill="none" stroke="#b08cff" stroke-width="2.5" stroke-dasharray="9 8" marker-end="url(#violetArrow)"/>
 <text x="905" y="404" text-anchor="middle" fill="#cdbdff" font-family="Arial, Helvetica, sans-serif" font-size="17">REWORK — decline sends it back</text>
-<path d="M1347 330V452A20 20 0 0 1 1327 472H120A20 20 0 0 1 100 452V332" fill="none" stroke="#b08cff" stroke-width="2.5" stroke-dasharray="9 8" marker-end="url(#violetArrow)"/>
+<path d="M1362 330V452A20 20 0 0 1 1342 472H120A20 20 0 0 1 100 452V332" fill="none" stroke="#b08cff" stroke-width="2.5" stroke-dasharray="9 8" marker-end="url(#violetArrow)"/>
 <text x="712" y="462" text-anchor="middle" fill="#cdbdff" font-family="Arial, Helvetica, sans-serif" font-size="19">OPERATE → LEARN — the system teaches the next direction</text>
 <g transform="translate(300,0)">
 <rect x="40" y="505" width="820" height="64" rx="16" fill="#101b34" fill-opacity=".95" stroke="#45a2ff" stroke-width="2"/>
