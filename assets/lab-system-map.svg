@@ -20,9 +20,9 @@
   @keyframes kDeny{0%,37.5%{opacity:0}38.2%{opacity:1}44%{opacity:1}45%,100%{opacity:0}}
   @keyframes kDec{0%,38.5%{opacity:0;stroke-dashoffset:16}39.2%{opacity:1}45.5%{opacity:1}46.5%,100%{opacity:0;stroke-dashoffset:-217}}
   @keyframes kOk{0%,53%{opacity:0}53.7%{opacity:1}60%{opacity:1}61%,100%{opacity:0}}
-  @keyframes kEg{0%,56.5%{opacity:0;stroke-dashoffset:12}57.2%{opacity:1}60.5%{opacity:1}61.3%,100%{opacity:0;stroke-dashoffset:-30}}
+  @keyframes kEg{0%,56.5%{opacity:0;stroke-dashoffset:12}57.2%{opacity:1}60.5%{opacity:1}61.3%,100%{opacity:0;stroke-dashoffset:-18}}
   @keyframes kCloud{0%,56%{opacity:0}57%{opacity:.85}63%{opacity:.85}64%,100%{opacity:0}}
-  @keyframes kRet{0%,70%{opacity:0;stroke-dashoffset:26}71%{opacity:1}77%{opacity:1}78%,100%{opacity:0;stroke-dashoffset:-401}}
+  @keyframes kRet{0%,70%{opacity:0;stroke-dashoffset:26}71%{opacity:1}77%{opacity:1}78%,100%{opacity:0;stroke-dashoffset:-375}}
   @keyframes kHome{0%,78%{opacity:0}79%{opacity:.75}84%{opacity:.75}85%,100%{opacity:0}}
   @keyframes breathe{0%,100%{opacity:.55}50%{opacity:1}}
   .breathe{animation:breathe 4s ease-in-out infinite}
