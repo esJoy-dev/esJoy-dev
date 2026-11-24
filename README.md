@@ -16,15 +16,13 @@ I bring full stack development, automation, AI, and infrastructure together into
 
 Self-hosted bench on my own hardware. Workloads and data stay on the machine unless I explicitly decide otherwise and when the work calls for cloud models, they run through the same gated, authenticated paths. Cloud is part of my daily work and the bench is the foundation, not a purity contest. Services are loopback-only by default; anything that must be reached remotely goes through an authenticated gateway, never a raw port. Agents propose, the user reviews, refines, and approves. Nothing ships without passing the gate.
 
-<div align="center">
-  <img src="assets/lab-system-map.svg" alt="Static-complete LAB cross-section: inside the local-only boundary a self-hosted workstation runs automation, generation, and local-model services with agent lanes; data and work stay on owner hardware; a user gate just below the boundary holds all egress, which crosses only through an authenticated gateway; results and lessons come home; a guard-blue security band runs beneath everything. Animation is decorative; the diagram is complete without it." width="100%" />
-</div>
+The lab work itself — experiments, audits, runbooks — lives in **[LAB](https://github.com/esJoy-dev/LAB)**:
 
 - **Audit first.** Every change starts read-only: inventory, probe, understand then act.
-- **Hunt your own leaks.** A recent audit caught a local service bound to all interfaces with no auth. Remediated to loopback-only, documented, runbooked.
+- **Hunt your own leaks.** Audits have caught my own services bound wider than they should be — remediated, documented, runbooked.
 - **Post-fix runbooks.** If it surprised me once, it's written down so it can't surprise me twice.
 
-_The LAB is shared at concept level on purpose: methods and lessons, never live endpoints, ports, or versions._
+_Methods and lessons are shared at concept level on purpose: never live endpoints, ports, or versions._
 
 ## 🛠️ Focus Areas & Stack
 
@@ -35,6 +33,10 @@ _The LAB is shared at concept level on purpose: methods and lessons, never live 
 | **Infrastructure & Self-Hosting** | Local environments, containers, cloud services, connected systems. | Linux & other OS · Docker · Cloudflare · Supabase (PostgreSQL) · other databases in progress |
 
 _The tools and environments I use are not a claim of equal expertise in each. Terminal-first workflows._
+
+## 🧡 Honorable Mention
+
+[Gentle Shell](https://gentlemanprogramming.com/gentle-shell/) deserves more than a table row. It's my daily driver — the coding-agent workspace where keeping the user in charge is the actual runtime: agents iterate, a review gate decides, and nothing ships without my approval. Gratitude to its developer for building control and review into the defaults instead of bolting them on. → **[Field notes from my bench](https://github.com/esJoy-dev/LAB/blob/main/tools/gentle-shell.md)**
 
 ## 🔄 How work ships
 
