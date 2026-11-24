@@ -10,6 +10,8 @@
  <marker id="mintArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L10 5L0 10Z" fill="#56e7af"/></marker>
  <marker id="amberArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L10 5L0 10Z" fill="#ffb454"/></marker>
  <style>
+  <!-- streak invariant: keyframe stroke-dashoffset delta must equal the exact path length.
+       Paths and lengths: kPkt M458 318H493 (35), kDec M515 625H478V390 (272), kEg M575 685V715 (30), kRet M337 830H140V544 (483). -->
   .fx{opacity:0;animation-duration:16s;animation-iteration-count:infinite;animation-timing-function:ease-in-out}
   .cm{fill:none;stroke-linecap:round;animation-timing-function:linear}
   .kDome{animation-name:kDome}.kLanes{animation-name:kLanes}.kPkt{animation-name:kPkt}.kGate{animation-name:kGate}.kDeny{animation-name:kDeny}.kDec{animation-name:kDec}.kLanesD{animation-name:kLanesD}.kOk{animation-name:kOk}.kEg{animation-name:kEg}.kCloud{animation-name:kCloud}.kRet{animation-name:kRet}.kHome{animation-name:kHome}
