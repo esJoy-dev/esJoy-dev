@@ -65,7 +65,7 @@
 <text x="765" y="300" fill="#d7e5f2" font-family="Arial, Helvetica, sans-serif" font-size="19">what breaks.</text>
 <path d="M690 208H743" fill="none" stroke="#4de8f5" stroke-width="2.5" marker-end="url(#cyanArrow)"/>
 <path d="M745 285H692" fill="none" stroke="#b08cff" stroke-width="2.5" stroke-dasharray="9 8" class="flowF" marker-end="url(#violetArrow)"/>
-<text x="717" y="350" text-anchor="middle" fill="#cdbdff" font-family="Arial, Helvetica, sans-serif" font-size="17">findings</text>
+<text x="717" y="302" text-anchor="middle" fill="#cdbdff" font-family="Arial, Helvetica, sans-serif" font-size="14">findings</text>
 <rect x="55" y="130" width="330" height="200" rx="20" fill="url(#mintglass)" stroke="#56e7af" stroke-width="1.8"/>
 <path d="M73 132h140" stroke="#d9f9ff" stroke-opacity=".4" stroke-width="2"/>
 <rect x="75" y="150" width="100" height="26" rx="13" fill="#0f493f" stroke="#56e7af" stroke-width="1.4"/><text x="125" y="167" text-anchor="middle" fill="#b8ffe1" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" letter-spacing="1">USER-LED</text>
