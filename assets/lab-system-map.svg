@@ -18,7 +18,7 @@
   @keyframes kPkt{0%,13.5%{opacity:0;stroke-dashoffset:16}14.2%{opacity:1}15.8%{opacity:1}16.6%,100%{opacity:0;stroke-dashoffset:-19}}
   @keyframes kGate{0%,33%{opacity:0}34%{opacity:.9}48%{opacity:.9}49.5%,100%{opacity:0}}
   @keyframes kDeny{0%,37.5%{opacity:0}38.2%{opacity:1}44%{opacity:1}45%,100%{opacity:0}}
-  @keyframes kDec{0%,38.5%{opacity:0;stroke-dashoffset:16}39.2%{opacity:1}45.5%{opacity:1}46.5%,100%{opacity:0;stroke-dashoffset:-357}}
+  @keyframes kDec{0%,38.5%{opacity:0;stroke-dashoffset:16}39.2%{opacity:1}45.5%{opacity:1}46.5%,100%{opacity:0;stroke-dashoffset:-256}}
   @keyframes kLanesD{0%,38.7%{opacity:0}39.4%{opacity:.85}45.5%{opacity:.85}46.5%,100%{opacity:0}}
   @keyframes kOk{0%,53%{opacity:0}53.7%{opacity:1}60%{opacity:1}61%,100%{opacity:0}}
   @keyframes kEg{0%,56.5%{opacity:0;stroke-dashoffset:12}57.2%{opacity:1}60.5%{opacity:1}61.3%,100%{opacity:0;stroke-dashoffset:-18}}
@@ -149,6 +149,6 @@
 <path d="M337 830H140V544" stroke="#7dffd2" stroke-width="4" stroke-dasharray="26 457" class="fx cm kRet"/>
 <rect x="6" y="671" width="268" height="38" rx="19" fill="none" stroke="#7dffd2" stroke-width="3.5" class="fx kHome"/>
 <!-- decline: streak back to the lanes, lanes rework activity, then back to the gate -->
-<path d="M515 625H478V390" stroke="#ffd28a" stroke-width="4" stroke-dasharray="16 357" marker-end="url(#amberArrow)" class="fx cm kDec"/>
+<path d="M515 625H478V390" stroke="#ffd28a" stroke-width="4" stroke-dasharray="16 256" marker-end="url(#amberArrow)" class="fx cm kDec"/>
 <rect x="258" y="258" width="635" height="124" rx="16" fill="none" stroke="#ffd28a" stroke-width="4" class="fx kLanesD"/>
 </svg>
