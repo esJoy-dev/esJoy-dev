@@ -35,7 +35,7 @@
 
 <!-- local-only boundary -->
 <rect x="50" y="80" width="700" height="390" rx="36" fill="none" stroke="#45a2ff" stroke-width="2.5" stroke-opacity=".9"/>
-<rect x="240" y="68" width="320" height="26" rx="13" fill="#101b34" stroke="#45a2ff" stroke-width="1.5"/>
+<rect x="200" y="68" width="400" height="26" rx="13" fill="#101b34" stroke="#45a2ff" stroke-width="1.5"/>
 <text x="400" y="85" text-anchor="middle" fill="#d6e6ff" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="bold" letter-spacing="1">LOCAL-ONLY · LOOPBACK BY DEFAULT</text>
 
 <!-- workstation dome interior -->
