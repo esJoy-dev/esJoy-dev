@@ -63,7 +63,7 @@
 <path d="M915 225V252" fill="none" stroke="#4de8f5" stroke-width="2.5" marker-end="url(#cyanArrow)"/>
 
 <!-- agent lanes -->
-<rect x="85" y="258" width="1030" height="124" rx="16" fill="#1c2344" fill-opacity=".55" stroke="#b08cff" stroke-width="1.8"/>
+<rect x="85" y="258" width="1005" height="124" rx="16" fill="#1c2344" fill-opacity=".55" stroke="#b08cff" stroke-width="1.8"/>
 <text x="105" y="284" fill="#d8c9ff" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" letter-spacing="1">AGENT LANES — BUILD &amp; VERIFY INSIDE THE BENCH</text>
 <rect x="105" y="296" width="180" height="44" rx="10" fill="#14324a" stroke="#4de8f5" stroke-width="1.5"/><text x="195" y="323" text-anchor="middle" fill="#f5f9ff" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold">IMPLEMENT</text>
 <rect x="325" y="296" width="180" height="44" rx="10" fill="#14324a" stroke="#4de8f5" stroke-width="1.5"/><text x="415" y="323" text-anchor="middle" fill="#f5f9ff" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold">VERIFY</text>
@@ -110,8 +110,6 @@
 
 <!-- results and lessons come home (up the left side) -->
 <path d="M475 830H140V544" fill="none" stroke="#56e7af" stroke-width="2" stroke-dasharray="9 8" marker-end="url(#mintArrow)"/>
-<rect x="13" y="677" width="254" height="26" rx="13" fill="#0e2136" stroke="#56e7af" stroke-opacity=".5" stroke-width="1"/>
-<text x="140" y="694" text-anchor="middle" fill="#b8ffe1" font-family="Arial, Helvetica, sans-serif" font-size="17">results &amp; lessons come home</text>
 
 <!-- guard band -->
 <rect x="40" y="935" width="1070" height="60" rx="16" fill="#101b34" fill-opacity=".95" stroke="#45a2ff" stroke-width="2"/>
@@ -129,11 +127,13 @@
 
 <!-- narrative animation overlays: one spotlight, one streak at a time -->
 <rect x="60" y="105" width="1030" height="415" rx="24" fill="none" stroke="#7ceeff" stroke-width="5" class="fx kDome"/>
-<rect x="85" y="258" width="1030" height="124" rx="16" fill="none" stroke="#cbb0ff" stroke-width="4" class="fx kLanes"/>
+<rect x="85" y="258" width="1005" height="124" rx="16" fill="none" stroke="#cbb0ff" stroke-width="4" class="fx kLanes"/>
 <path d="M285 318H320" stroke="#b6f7ff" stroke-width="4" stroke-dasharray="16 36" class="fx cm kPkt"/>
 <rect x="440" y="528" width="245" height="150" rx="16" fill="none" stroke="#7dffd2" stroke-width="4" class="fx kGate"/>
 <path d="M575 660V715" stroke="#d7bbff" stroke-width="4" stroke-dasharray="20 35" class="fx cm kEg"/>
 <rect x="490" y="780" width="470" height="78" rx="16" fill="none" stroke="#7ceeff" stroke-width="4" class="fx kCloud"/>
 <path d="M475 830H140V544" stroke="#7dffd2" stroke-width="4" stroke-dasharray="26 595" class="fx cm kRet"/>
 <rect x="6" y="671" width="268" height="38" rx="19" fill="none" stroke="#7dffd2" stroke-width="3.5" class="fx kHome"/>
+<rect x="13" y="677" width="254" height="26" rx="13" fill="#0e2136" stroke="#56e7af" stroke-opacity=".5" stroke-width="1"/>
+<text x="140" y="694" text-anchor="middle" fill="#b8ffe1" font-family="Arial, Helvetica, sans-serif" font-size="17">results &amp; lessons come home</text>
 </svg>
