@@ -5,14 +5,10 @@
 .DS_Store
 Thumbs.db
 
-# Python cache (banner pipeline scripts)
-__pycache__/
-*.pyc
-
 # Local working notes, not published
 SETUP.md
 odd/
 
-# Banner intermediates only — WORKFLOW.md, enhance.py and fade_bottom.py are
-# tracked on purpose (see assets/banner/WORKFLOW.md)
-assets/banner/work/
+
+# Local-only banner masters (moved out of the repo; kept on disk for the future Dome repo)
+assets/banner/
