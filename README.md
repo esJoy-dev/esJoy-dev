@@ -26,17 +26,15 @@ I bring full stack development, automation, AI, and infrastructure together into
 
 _The tools and environments I use are not a claim of equal expertise in each. Terminal-first workflows._
 
-## 🧡 Honorable Mention
-
 [Gentle Shell](https://gentlemanprogramming.com/gentle-shell/) It's my daily driver coding agent workspace where keeping the user in charge is the actual runtime. Agents iterate, a review gate decides, and nothing ships without my approval. Gratitude to its [developer](https://github.com/Gentleman-Programming) for building full control and review into the defaults.
 
 ## 🧪 The LAB
 
-Self-hosted bench on my own hardware. Workloads and data stay on the machine unless I explicitly decide otherwise; when the work calls for cloud models, they run through the same gated, authenticated paths. Cloud is part of my daily work and the bench is the foundation, not a purity contest. Services are loopback-only by default; anything that must be reached remotely goes through an authenticated gateway, never a raw port. Agents propose; I review, refine, and approve. Nothing ships without passing the gate.
+Self-hosted bench on my own hardware. Workloads and data stay local unless I explicitly decide otherwise; when the work calls for cloud models, they run through the same gated, authenticated paths. Cloud is part of my daily work and the bench is the foundation, not a purity contest. Services are loopback-only by default; anything that must be reached remotely goes through an authenticated gateway, never a raw port. Agents propose I review, refine, and approve. Nothing ships without passing the gate.
 
-- **Audit first.** Every change starts read-only: inventory, probe, understand — then act.
+- **Audit first.** Every change starts read-only: inventory, probe, understand then act.
 - **Hunt your own leaks.** Audits have caught my own services bound wider than they should be → remediated, documented, runbooked.
-- **Runbooks.** If it surprised me once, it's written down so it can't surprise me twice — and the lesson persists across sessions through agent memory.
+- **Runbooks.** If it surprised me once, it's written down and the lesson persists across sessions through agent memory.
 
 _Methods and lessons are shared at concept level on purpose: never live endpoints, ports, or versions._
 
