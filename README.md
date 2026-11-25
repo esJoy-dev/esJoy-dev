@@ -32,7 +32,7 @@ _The tools and environments I use are not a claim of equal expertise in each. Te
 
 ## 🧡 Honorable Mention
 
-[Gentle Shell](https://gentlemanprogramming.com/gentle-shell/) deserves more than a table row. It's my daily driver — the coding-agent workspace where keeping the user in charge is the actual runtime: agents iterate, a review gate decides, and nothing ships without my approval. Gratitude to its developer for building control and review into the defaults instead of bolting them on. → **[Field notes from my bench](https://github.com/esJoy-dev/LAB/blob/main/tools/gentle-shell.md)**
+[Gentle Shell](https://gentlemanprogramming.com/gentle-shell/) deserves more than a table row. It's my daily driver — the coding-agent workspace where keeping the user in charge is the actual runtime: agents iterate, a review gate decides, and nothing ships without my approval. Gratitude to its developer for building control and review into the defaults instead of bolting them on.
 
 ## 🔄 How work ships
 
