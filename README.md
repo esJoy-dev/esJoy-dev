@@ -37,11 +37,9 @@ Self-hosted bench on my own hardware. Workloads and data stay on the machine unl
 
 _Methods and lessons are shared at concept level on purpose: never live endpoints, ports, or versions._
 
-## Honorable Mention
+##
 
-[Gentle Shell](https://gentlemanprogramming.com/gentle-shell/) deserves more than a table row. It's my daily driver. The coding agent workspace where keeping the user in charge is the actual runtime: agents iterate, a review gate decides, and nothing ships without my approval. Gratitude to its developer for building control and review into the defaults instead of bolting them on. → **[Field notes from my bench](https://github.com/esJoy-dev/LAB/blob/main/tools/gentle-shell.md)**
-
-Every agent change moves through this loop: agents iterate, the user's gate decides, and only approved work ships. Security runs across every phase.
+[Gentle Shell](https://gentlemanprogramming.com/gentle-shell/) It's my daily driver. The coding agent workspace where keeping the user in charge is the actual runtime. Agents iterate, a review gate decides, and nothing ships without my approval. Gratitude to its [developer](https://github.com/Gentleman-Programming) for building control and review into the defaults instead of bolting them on.
 
 ## 🌱 The Dome Connection
 
