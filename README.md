@@ -12,13 +12,9 @@ I bring full stack development, automation, AI, and infrastructure together into
 - **Stay adaptable.** Avoid unnecessary dependence on one model, platform, or provider.
 - **Keep exploring.** Experimentation is part of the engineering process.
 
-## 🧪 The LAB
-
-Self-hosted bench on my own hardware. Workloads and data stay on the machine unless I explicitly decide otherwise; when the work calls for cloud models, they run through the same gated, authenticated paths. Cloud is part of my daily work and the bench is the foundation, not a purity contest. Services are loopback-only by default; anything that must be reached remotely goes through an authenticated gateway, never a raw port. Agents propose; I review, refine, and approve. Nothing ships without passing the gate.
-
-- **Audit first.** Every change starts read-only: inventory, probe, understand — then act.
-- **Hunt your own leaks.** Audits have caught my own services bound wider than they should be → remediated, documented, runbooked.
-- **Runbooks.** If it surprised me once, it's written down so it can't surprise me twice — and the lesson persists across sessions through agent memory.
+<div align="center">
+  <img src="assets/engineering-workflow.svg" alt="Animated engineering loop: the user sets direction in Explore and Architect; agents iterate an Implement-Verify delivery loop; the user approval gate declines work once, then approves on the second pass; Release powers on only after approval and feeds an operate-and-learn arc back into direction. Security runs across every phase. Animation is decorative; the static diagram is complete on its own." width="100%" />
+</div>
 
 ## 🛠️ Focus Areas & Stack
 
@@ -32,19 +28,21 @@ _The tools and environments I use are not a claim of equal expertise in each. Te
 
 ## 🧡 Honorable Mention
 
-[Gentle Shell](https://gentlemanprogramming.com/gentle-shell/) deserves more than a table row. It's my daily driver — the coding-agent workspace where keeping the user in charge is the actual runtime: agents iterate, a review gate decides, and nothing ships without my approval. Gratitude to its developer for building control and review into the defaults instead of bolting them on.
+[Gentle Shell](https://gentlemanprogramming.com/gentle-shell/) It's my daily driver coding agent workspace where keeping the user in charge is the actual runtime. Agents iterate, a review gate decides, and nothing ships without my approval. Gratitude to its [developer](https://github.com/Gentleman-Programming) for building full control and review into the defaults.
 
-## 🔄 How work ships
+## 🧪 The LAB
 
-<div align="center">
-  <img src="assets/engineering-workflow.svg" alt="Animated engineering loop: the user sets direction in Explore and Architect; agents iterate an Implement-Verify delivery loop; the user approval gate declines work once, then approves on the second pass; Release powers on only after approval and feeds an operate-and-learn arc back into direction. Security runs across every phase. Animation is decorative; the static diagram is complete on its own." width="100%" />
-</div>
+Self-hosted bench on my own hardware. Workloads and data stay on the machine unless I explicitly decide otherwise; when the work calls for cloud models, they run through the same gated, authenticated paths. Cloud is part of my daily work and the bench is the foundation, not a purity contest. Services are loopback-only by default; anything that must be reached remotely goes through an authenticated gateway, never a raw port. Agents propose; I review, refine, and approve. Nothing ships without passing the gate.
 
-Every agent change moves through this loop: agents iterate, the user's gate decides, and only approved work ships. Security runs across every phase.
+- **Audit first.** Every change starts read-only: inventory, probe, understand — then act.
+- **Hunt your own leaks.** Audits have caught my own services bound wider than they should be → remediated, documented, runbooked.
+- **Runbooks.** If it surprised me once, it's written down so it can't surprise me twice — and the lesson persists across sessions through agent memory.
+
+_Methods and lessons are shared at concept level on purpose: never live endpoints, ports, or versions._
 
 ## 🌱 The Dome Connection
 
-[Dome](https://neodome.app) is a framework I'm developing around interconnected, autonomous digital ecosystems: local agents, self-hosted infrastructure, and workflows that stay under the user's control. Growth and adaptation: roots that connect the ecosystem's components while keeping the system understandable. Dome is one expression of my engineering philosophy, not the limit of what I design. → **[Visit Dome](https://neodome.app)**
+[Dome](https://neodome.app) is a framework I'm developing around interconnected digital ecosystems: local agents, self-hosted infrastructure, and workflows that stay under the user's control. Growth and adaptation: roots that connect the ecosystem's components while keeping the system understandable. Dome is one expression of my engineering philosophy, not the limit of what I design. → **[Visit Dome](https://neodome.app)**
 
 ## 🤝 Let's Connect
 
