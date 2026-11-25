@@ -14,15 +14,11 @@ I bring full stack development, automation, AI, and infrastructure together into
 
 ## 🧪 The LAB
 
-Self-hosted bench on my own hardware. Workloads and data stay on the machine unless I explicitly decide otherwise and when the work calls for cloud models, they run through the same gated, authenticated paths. Cloud is part of my daily work and the bench is the foundation, not a purity contest. Services are loopback-only by default; anything that must be reached remotely goes through an authenticated gateway, never a raw port. Agents propose, the user reviews, refines, and approves. Nothing ships without passing the gate.
+Self-hosted bench on my own hardware. Workloads and data stay on the machine unless I explicitly decide otherwise; when the work calls for cloud models, they run through the same gated, authenticated paths. Cloud is part of my daily work and the bench is the foundation, not a purity contest. Services are loopback-only by default; anything that must be reached remotely goes through an authenticated gateway, never a raw port. Agents propose; I review, refine, and approve. Nothing ships without passing the gate.
 
-The lab work itself — experiments, audits, runbooks — lives in **[LAB](https://github.com/esJoy-dev/LAB)**:
-
-- **Audit first.** Every change starts read-only: inventory, probe, understand then act.
-- **Hunt your own leaks.** Audits have caught my own services bound wider than they should be — remediated, documented, runbooked.
-- **Post-fix runbooks.** If it surprised me once, it's written down so it can't surprise me twice.
-
-_Methods and lessons are shared at concept level on purpose: never live endpoints, ports, or versions._
+- **Audit first.** Every change starts read-only: inventory, probe, understand — then act.
+- **Hunt your own leaks.** Audits have caught my own services bound wider than they should be → remediated, documented, runbooked.
+- **Runbooks.** If it surprised me once, it's written down so it can't surprise me twice — and the lesson persists across sessions through agent memory.
 
 ## 🛠️ Focus Areas & Stack
 
